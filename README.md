@@ -44,3 +44,54 @@ Type 4: Thin Driver<br>
 it is purely written in java and translates JDBC calls into network protocol calls and communicates directly with the db server,providing the best performance and scalability.<br><br>
 
 in type 1 it has performance issur and written in c lang and ODBC driver is too old and type 3 needs middleware witch type 4 dont and type 2 while converting calls it gives some issue simply call as performance issue.<br><br></p>
+
+<h4>JDBC COMPONENTS :</h4><br><p> there are so many components but we will seen only which is used commanly.<br>
+1]Driver
+2]Driver Manager(DriverManager IS A CLASS )
+3]Connerction(CONNECTION IS AN INTERFACE)
+4]Statement 
+5]ResultSet
+6]SQL Exception
+<h6>*Driver Manager(DriverManager IS A CLASS ):</h6><br>
+<p>The DriverManager class manages a list of db drivers.It establishes connections to the db using the appropriate driver and handles the process of loading the driver class.It provides a standardized method for handling multiple db connections and selecting the appropriate driver.</p><br><br>
+<h6>Connerction(CONNECTION IS AN INTERFACE):</h6><br>
+ <p>i]Creation of Statement: the connection interface is used to create a Statement obj, which is used to execute SQL queries against the db. <br>
+ ii]Transaction Management: the connection interface allows transactions to be managed with methods such as commit() and rollback().<br>
+iii]Retrieval of Metadata: the connection interface provides method to retrive metadata from the db, including info about the db structure and the various objects that are defined in it .</p><br><br>
+<h6>Statement:</h6><br>
+<p>i]Statement:the statement interface is used to execute simple SQL queries without parameters.<br>
+ii]PreparedStatement:is used for executing precompiled sql queries with parameters,which can be more efficient and secure than Statement object.<br>
+iii]CallableStatement:is used for executing db stored procedures.It provides a more efficient way to access them than with SQl statement.
+</p><br><br>
+<h6>ResultSet:</h6><br>
+<p>i]Retrieving Data:the ResultSet interface is used to iterate through the rows of the result set and retrieve the data from the columns.<br>
+ii]SCrolling Through Results:The ResultSet can be scrolled forwards and backwards to natigate through the results of the SQL query.<br>
+iii]Modification of Data:the ResultSet allows modifications to the data within the db to be make,including insertion,deletion,and updates.
+</p><br><br>
+<h6>SQl Exception:</h6> <br>
+<p>SQLException is an exception class that handles errors and exceptions related to db interactions. It provides information about the type of error that occurred,and allows for moreaccurate debugging and error resolution.</p></p>
+
+<h5>EXCEPTION HANDLING jAVA:</h5> <br> 
+<p>Basically we have divides exception into 2 1]Checked Exception and 2] Unchecked Exception <br>
+i]Checked Exception:This are the exception which are checked at compile time.<br>
+ii]Unchecked Exception:This are the exception which are not conformed at compile time but checked at runtime.</p><br><br>
+
+<h2>Flow Chart:</h2>
+<pre>
+						Throwable
+							|
+	Exception									Error
+		|								  		  |
+	i]IOException								i]StackOverflowError
+	ii]SQLException								ii]VirtualMachineError
+	iii]ClassNotFoundException					iii]OutOfMemoryError
+	iv]Runtime Exception						
+			|
+			i]ArithmeticException
+			ii]NullPointerException
+			iii]NumberFormatException
+			iv]IndexOutOfBoundsException
+						|
+					i]ArrayIndexOutOfBoundsException
+					ii]StringIndexOutOfBoundsException
+</pre>

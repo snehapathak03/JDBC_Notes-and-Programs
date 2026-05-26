@@ -95,3 +95,44 @@ ii]Unchecked Exception:This are the exception which are not conformed at compile
 					i]ArrayIndexOutOfBoundsException
 					ii]StringIndexOutOfBoundsException
 </pre>
+
+<h4>5 magical keywords</h4>
+<pre>
+	1]Try
+	2]Catch
+	3]Finally
+	4]throw
+	5]Throws
+</pre>	
+	
+<pre>	
+	1]TRY Catch 
+	Before:
+	import java.util.Scanner;
+	public class ExceptionDemo{
+		public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		int divident = sc.nextInt();     //10
+		int divisor = sc.nextInt();		 //0
+		int result = divident/divisor;
+		System.out.println("Your answer is : "+result);
+		}
+	}
+	<h5>it will give ArithmeticException the message will be [Exception in thread "main" java. lang.ArithmeticException] </h5>
+	<br><br>
+	<h5>After using try and catch:</h5>
+	import java.util.Scanner;
+	public class ExceptionDemo{
+		public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		int divident = sc.nextInt();     //10
+		int divisor = sc.nextInt();		 //0
+		try{
+		int result = divident/divisor;
+		System.out.println("Your answer is : "+result);
+		}catch(ArithmeticException e){
+		System.out.println("Divisor can't be 0!!!");
+		}
+		}
+	}
+</pre>

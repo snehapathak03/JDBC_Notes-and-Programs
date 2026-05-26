@@ -136,3 +136,33 @@ ii]Unchecked Exception:This are the exception which are not conformed at compile
 		}
 	}
 </pre>
+<h4>MULTIPLE TRY CATCH:</h4><pre>
+	import java.util.Scanner;
+	public class ExceptionDemo{
+		public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		int arr[] = new int [5];
+		arr[6] = 10/0;    // here we will get two exceptions,first one arr[6] i.e ArrayIndexOutOfBoundsException and second 10/0 ArithmeticException 
+		}
+	}
+	</pre>
+	<pre>USE multiple try catch 
+	import java.util.Scanner;
+	public class ExceptionDemo{
+		public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		int arr[] = new int [5];
+		try{
+			arr[6] = 10/0;
+			}
+		catch(ArithmeticException e){
+				System.out.println(e.getMessage());
+				}
+		catch(ArrayIndexOutOfBoundsException e){
+				System.out.println(e.getMessage());
+				}
+		}
+	}
+	<i>output will be : /by zero </i>
+	<i>And if we change arr[6] = 10; then it will give 'Index 6 out of bounds for length 5'.</i>
+	</pre>

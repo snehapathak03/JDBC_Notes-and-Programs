@@ -166,3 +166,56 @@ ii]Unchecked Exception:This are the exception which are not conformed at compile
 	<i>output will be : /by zero </i>
 	<i>And if we change arr[6] = 10; then it will give 'Index 6 out of bounds for length 5'.</i>
 	</pre>
+	<h5>NESTED TRY CATCH:</h5><pre>
+	public class ExceptionDemo{
+		public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		int arr[] = new int[5];		
+		try{
+		System.out.println("I am in first try block!");
+		try{
+			arr[6]= 10;
+		}catch(Exception e){				// when u dont know which exception is going to given just use the super class os that exception.
+		System.out.println(e.getMessage());
+		}
+		}catch(Exception e){
+		System.out.println(e.getMessage());
+		}
+		}
+	} </pre>
+	<pre>KEYWORD | DESCRIPTION 
+	try		| The 'try' keyword is used to specify a block where we should place an exception code. It means we can't
+              use try block alone.The try block must be followed by either catch or finally.
+	catch	| The 'catch' block is used to handle the exception.It must be preceded by try block which means we can't
+			  use catch block alone.It can be followed by finally block later.	
+	finally	| The 'finally' block is used to execute the necessary code of the program.It is executed wether an exception
+			  is handled or not.
+	throw	| The 'throw' keywordis used to throw an exception.
+	throws	| The 'throws' keyword is used to declare exceptions.It specifices that there may occur an exception in the method.
+			  It doesn't throw an exception.It is always used with method signature.
+	</pre>
+<pre>
+		<!-- public class Demo{
+		public static void main(String[]args){
+		Scanner s = new Scanner(System.in);
+		int age = s.nextInt();
+		if(age<18){
+		System.out.println("Sorry you are not eligible!");
+		}else{
+		System.out.println("You are eligible");
+		}
+		}
+	} 
+	BUT WHEN U HAVE TO THROW EXCEPTION THEN:
+	public class Demo{
+		public static void main(String[]args){
+		Scanner s = new Scanner(System.in);
+		int age = s.nextInt();
+		if(age<18){
+		throw new RuntimeException("Sorry you are not eligible!");
+		}else{
+		System.out.println("You are eligible");
+		}
+		}
+	} --></pre>
+	

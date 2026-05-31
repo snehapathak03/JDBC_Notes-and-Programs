@@ -231,3 +231,21 @@ ii]Unchecked Exception:This are the exception which are not conformed at compile
 	<i><u>output:it will give exception 
 	Exception in thread "main" java.lang.ArithmeticException</u></i></pre>
 	<p>------------------------------------------------------------------------------------------------</p>
+	<pre>
+	import java.sql.Connection;
+	import java.sql.DriverManager;
+	import java.sql.SQLException;
+	public class Example {
+	public static void main(String[] args) throws ClassNotFoundException, SQLException{
+		// Step 1:Register the Driver
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		//Step2:Establish the Connection
+		String url = "jdbc:mysql://localhost:3306/Students";
+		String username = "root";
+		String password = "sona@2003";
+		Connection con = DriverManager.getConnection(url, username, password);
+		System.out.println("connection created");
+	}</pre><p>	
+	[This is the first step towards jdbc, start writing with step1 , that is to register the driver i.e Class.forName(url),here 
+	it will give classNotFoundException for that use throws and add classNotFoundException anf now step2
+	here we have to establish the connection]</p>

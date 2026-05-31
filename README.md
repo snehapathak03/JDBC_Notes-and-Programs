@@ -255,3 +255,42 @@ ii]Unchecked Exception:This are the exception which are not conformed at compile
 			->use database sneha_db;<br>
 			->create table table_name(col1,col2);<br>
 	step 2: Once the table is created go back to eclips.</p>
+	<h3>CONNECT JAVA TO MYSQL:</h3>
+	<h5>TYPE 1:</h5><pre>
+	package jdbc;
+	import java.sql.Connection;	
+	import java.sql.DriverManager;
+	import java.sql.SQLException;
+	public class Example {
+	public static void main(String[] args) throws ClassNotFoundException, SQLException{
+		// Step 1:Register the Driver
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		//Step2:Establish the Connection
+		String url = "jdbc:mysql://localhost:3306/Students";
+		String username = "root";
+		String password = "sona@2003";
+		Connection con = DriverManager.getConnection(url, username, password);
+		System.out.println("connection created");
+	}
+}</pre>
+	<h5>TYPE 2:</h5><pre>
+	import java.sql.*;
+	public class Example2 {
+	public static void main(String[] args) {
+		String url = "jdbc:mysql://localhost:3306/Students";
+		String username = "root";
+		String password = "sona@2003";
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			System.out.println("Drivers loaded successfully!!!");
+		}catch(ClassNotFoundException e) {
+			System.out.println(e.getMessage());
+		}
+		try {
+			Connection con = DriverManager.getConnection(url, username, password);
+			System.out.println("connection Established Successfullt!!");
+		}catch(SQLException e){
+			System.out.println(e.getMessage());
+		}
+	}
+}</pre>

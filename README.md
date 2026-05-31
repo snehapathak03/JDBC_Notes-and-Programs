@@ -219,4 +219,14 @@ ii]Unchecked Exception:This are the exception which are not conformed at compile
 		}
 		}
 	}</pre>
-	
+	<h5>THROWS:</h5><pre>
+	public class Exception{
+		public static void divisionDemo(int divident, int divisior){
+		println("The result id :"+divident/divisior);
+		}
+		public static void main(String[]args){
+		divisionDemo(divident:10, divisior:0);
+		}
+	}
+	<i><u>output:it will give exception 
+	Exception in thread "main" java.lang.ArithmeticException</u></i></pre>

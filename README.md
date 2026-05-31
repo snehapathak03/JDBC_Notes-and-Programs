@@ -230,3 +230,4 @@ ii]Unchecked Exception:This are the exception which are not conformed at compile
 	}
 	<i><u>output:it will give exception 
 	Exception in thread "main" java.lang.ArithmeticException</u></i></pre>
+	<p>------------------------------------------------------------------------------------------------</p>

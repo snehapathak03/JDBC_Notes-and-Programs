@@ -194,12 +194,13 @@ ii]Unchecked Exception:This are the exception which are not conformed at compile
 	throws	| The 'throws' keyword is used to declare exceptions.It specifices that there may occur an exception in the method.
 			  It doesn't throw an exception.It is always used with method signature.
 	</pre>
+	<h5>THROW</h5>
 <pre>
-		<!-- public class Demo{
+		public class Demo{
 		public static void main(String[]args){
 		Scanner s = new Scanner(System.in);
 		int age = s.nextInt();
-		if(age<18){
+		if(age< 18){
 		System.out.println("Sorry you are not eligible!");
 		}else{
 		System.out.println("You are eligible");
@@ -211,11 +212,11 @@ ii]Unchecked Exception:This are the exception which are not conformed at compile
 		public static void main(String[]args){
 		Scanner s = new Scanner(System.in);
 		int age = s.nextInt();
-		if(age<18){
+		if(age< 18){
 		throw new RuntimeException("Sorry you are not eligible!");
 		}else{
 		System.out.println("You are eligible");
 		}
 		}
-	} --></pre>
+	}</pre>
 	

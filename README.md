@@ -249,3 +249,9 @@ ii]Unchecked Exception:This are the exception which are not conformed at compile
 	[This is the first step towards jdbc, start writing with step1 , that is to register the driver i.e Class.forName(url),here 
 	it will give classNotFoundException for that use throws and add classNotFoundException anf now step2
 	here we have to establish the connection]</p>
+	<p>step 1: open 'MySQL commant line client' in that <br>
+			->show databases;<br>
+			->create database sneha_db;<br>
+			->use database sneha_db;<br>
+			->create table table_name(col1,col2);<br>
+	step 2: Once the table is created go back to eclips.</p>

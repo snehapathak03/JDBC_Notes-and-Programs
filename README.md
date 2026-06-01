@@ -344,3 +344,11 @@ ii]Unchecked Exception:This are the exception which are not conformed at compile
 	Name: Kush<br>
 	Job title: Manager<br>
 	salary: 95000.0</p>
+	<p>There are 5 steps to connect any java application with the
+	database using JDBC. These steps are as follows :<br>
+	1. Load and register Driver<br>
+	2. Establish connection<br>
+	3. Create a Statement<br>
+	4. Execute the query<br>
+	5. Process the result<br>
+	6. Close the connection</p>

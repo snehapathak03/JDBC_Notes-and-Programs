@@ -326,3 +326,21 @@ ii]Unchecked Exception:This are the exception which are not conformed at compile
 			System.out.println(e.getMessage());
 		}
 	}</pre>
+	<p>OUTPUT:<br>
+	Drivers loaded successfully!!!<br>
+	connection Established Successfullt!!<br>
+	==========================<br>
+	ID: 1<br>
+	Name: kunal<br>
+	Job title: software engg<br>
+	salary: 75000.0<br>
+	==========================<br>
+	ID: 2<br>
+	Name: Shushi<br>
+	Job title: Developer<br>
+	salary: 75000.0<br>
+	==========================<br>
+	ID: 3<br>
+	Name: Kush<br>
+	Job title: Manager<br>
+	salary: 95000.0</p>

@@ -352,3 +352,18 @@ ii]Unchecked Exception:This are the exception which are not conformed at compile
 	4. Execute the query<br>
 	5. Process the result<br>
 	6. Close the connection</p>
+	<p><h5>TO ESTABLISH CONNECTION WITH DB[Here, we are connecting with mydb Database.]</h5>
+	import java.sql.Connection;<br>
+	import java.sql.DriverManager;<br>
+	import java.sql.Exception;<br>
+	public class EstablishConnection{<br>
+		public static void main(String[] args){<br>
+		//1.Load and register the Driver<br>
+		Class.forName();<br>
+		//2.Establish connection<br>
+		Connection con = DriverManager.getConnection(url, username, password);<br>
+		System.out.println("Connection establish with mydb database.");<br>
+		System.out.println(con);<br>
+		}<br>
+	}</p>
+	

@@ -411,13 +411,7 @@ public class BuildConnection {
 
 }</pre>
 <h3>HOW TO INSERT VALUES:</h3>
-<pre>	package jdbc;
-
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.Statement;
-
-public class InsertingValues {
+<pre>public class InsertingValues {
 
 	public static void main(String[] args) {
 		try {

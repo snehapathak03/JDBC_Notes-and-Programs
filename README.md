@@ -622,3 +622,13 @@ public class DeleteData {
 				System.out.println("Connection closed successfully!!");
 	}
 }</pre>
+<p><h3>PREPARED STATEMENT:</h3>
+	Prepared statements are a feature in database programming, commanly used in JDBC and other data access libraries.<br>
+	They are used to execute Sql Wueries with placeholders for parameters. These placeholders are then filled with <br>
+	specific values when the query is executed.<br>
+	They offer serval advantages:<br>
+	1. Protection against SQL injection.<br>
+	2. Improved Performance.<br>
+	3. Code Readability and Maintainability.<br>
+	4. Automatic Data Type HANDLING.<br>
+	5. Portability   etc.....</p>

@@ -673,24 +673,20 @@ public class DeleteData {
 	<h3>	PreparedStatement WITH MULTIPLE PLACEHOLDERS :</h3>
 	<pre>
 	public static void main(String[] args) {
-		
 		String url = "jdbc:mysql://localhost:3306/Students";
 		String username = "root";
 		String password = "sona@2003";
 		String query = "SELECT * FROM employee WHERE name = ? AND job_title = ?;";
-		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			System.out.println("Drivers loaded successfully.");
 		}catch(ClassNotFoundException e) {
 			System.out.println(e.getMessage());
 		}
-		
 		try {
 			Connection con = DriverManager.getConnection(url, username, password);
 			System.out.println("Connection Establish Successfully.");
-			//Statement st = con.createStatement();
-			
+			//Statement st = con.createStatement();	
 			PreparedStatement ps = con.prepareStatement(query);
 			ps.setString(1, "UV");
 			ps.setString(2, "Intern");

@@ -711,32 +711,26 @@ public class DeleteData {
 			System.err.println(e.getMessage());
 		}</pre>
 	<h3>INSERT DATA USING PreparedStatement:</h3><pre>
-
 	public static void main(String[] args) {
-				
 				String url = "jdbc:mysql://localhost:3306/Students";
 				String username = "root";
 				String password = "sona@2003";
 				String query = "INSERT INTO employee(id, name, job_title, salary) VALUES (?, ?, ?, ?);";
-				
 				try {
 					Class.forName("com.mysql.cj.jdbc.Driver");
 					System.out.println("Drivers loaded successfully.");
 				}catch(ClassNotFoundException e) {
 					System.out.println(e.getMessage());
 				}
-
 				try {
 					Connection con = DriverManager.getConnection(url, username, password);
 					System.out.println("Connection Establish Successfully.");
 					//Statement st = con.createStatement();
-					
 					PreparedStatement ps = con.prepareStatement(query);
 					ps.setInt(1, 15);
 					ps.setString(2, "sheela");
 					ps.setString(3, "Project Manager");
-					ps.setDouble(4, 98000.00);
-					
+					ps.setDouble(4, 98000.00);	
 					int rowsAffected = ps.executeUpdate();
 					if(rowsAffected > 0) {
 						System.out.println("Data inserted successfully");
@@ -750,7 +744,6 @@ public class DeleteData {
 				}catch(SQLException e) {
 					System.err.println(e.getMessage());
 				}
-		
 	}
 }</pre>
 <h3>BATCH PROCESSING:</h3><p> in jdbc refers to the ability to group multiple SQL statemnt 

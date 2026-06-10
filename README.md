@@ -754,3 +754,16 @@ public class DeleteData {
 					This adds overhead and slows things down for bulk operations.<br>
 	With batching:Multiple statements are sent in one go.<br>Fewer round trips.Significant performance gain 
 	for large inserts/updates.</p>
+<h3>METHODS FOR BATCH PROCESSING :</h3><p>
+	addBatch(String sqlQuery):This method of Statement and PreparedStatement is used to add individual 
+	SQL statements to the batch.<br>
+	executeBatch():This method executes all the statements previously added to the batch.<br> 
+	It returns an array of integers, where each element represents the update count for the 
+	corresponding statement in the batch.<br>
+	setAutoCommit(boolean value):By default, many database connections operate in auto-commit mode.<br> 
+	This means that every individual SQL statement executed is automatically committed to the database
+	as a separate transaction.<br> If a statement completes successfully, its changes are immediately made permanent.<br>
+	When setAutoCommit(false) is called, the automatic committing of individual statements is turned off.<br>
+	commit():It is used to permanently save any transaction into the database.In JDBC, batch processing allows 
+	multiple SQL statements to be sent to the database in a single round trip, improving performance.<br> The commit()
+	method is then explicitly called on the Connection object to save these batched operations.</p>

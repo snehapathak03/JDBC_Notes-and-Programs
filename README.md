@@ -767,3 +767,9 @@ public class DeleteData {
 	commit():It is used to permanently save any transaction into the database.In JDBC, batch processing allows 
 	multiple SQL statements to be sent to the database in a single round trip, improving performance.<br> The commit()
 	method is then explicitly called on the Connection object to save these batched operations.</p>
+	<p>Can We Include SELECT Query in Batch Processing?<i>No.</i>In JDBC batch processing, you cannot include a SELECT query 
+	in the batch.<br>
+	Why?:Statement.addBatch() is meant for update operations such as:INSERT,UPDATE,DELETE,CREATE,DROP,ALTER.<br>A SELECT
+	query returns a ResultSet, whereas executeBatch() returns an int[] representing the number of rows affected by 
+	each statement.<br>Since executeBatch() is designed to handle update counts and not query results, a SELECT statement
+	cannot be included in batch processing.</p>

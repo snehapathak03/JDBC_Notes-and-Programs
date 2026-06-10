@@ -756,3 +756,8 @@ public class DeleteData {
 <h3>BATCH PROCESSING:</h3><p> in jdbc refers to the ability to group multiple SQL statemnt 
 	together and execute them as a single unit or batch, rather that executing each
 	statemnt individually.</p>
+<h5>Why Batch processing?? </h5><p>
+	Without batching:Each statement is sent separately to DB.<br>Each has its own network round trip.<br>
+					This adds overhead and slows things down for bulk operations.<br>
+	With batching:Multiple statements are sent in one go.<br>Fewer round trips.Significant performance gain 
+	for large inserts/updates.</p>

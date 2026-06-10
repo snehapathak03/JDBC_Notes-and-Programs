@@ -773,3 +773,6 @@ public class DeleteData {
 	query returns a ResultSet, whereas executeBatch() returns an int[] representing the number of rows affected by 
 	each statement.<br>Since executeBatch() is designed to handle update counts and not query results, a SELECT statement
 	cannot be included in batch processing.</p>
+	<p>What Happens If You Add a SELECT Query?:<br>If you try to add a SELECT query to a batch, the JDBC driver 
+	(such as PostgreSQL JDBC Driver) will throw an exception because it cannot return a ResultSet through 
+	executeBatch()</p>

@@ -782,4 +782,12 @@ public class DeleteData {
 			   Reduces network traffic<b5>
 			   Can accept input parameters and return output values.<b5>
 			   Improves security – Users can execute procedures without direct table access.<br>
+	<pre>DELIMITER $$
+	CREATE PROCEDURE procedure_name (
+    -- Parameters are defined here (e.g., IN p_name VARCHAR(50))
+	)
+	BEGIN
+    -- SQL statements;
+	END$$
+	DELIMITER ;</pre>		   
 	</p>

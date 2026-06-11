@@ -797,5 +797,15 @@ public class DeleteData {
 	No LANGUAGE clause: MySQL does not use a language specification like LANGUAGE plpgsql. It automatically uses 
 	MySQL's built-in procedural language.<br>
 	No AS $$: Instead of the AS $$ string literal syntax used in PostgreSQL, MySQL transitions directly from the 
-	parameter list to the BEGIN keyword.<br>	   
+	parameter list to the BEGIN keyword.<br>
+	<pre>Translating the add_student Example to MySQL
+	DELIMITER $$
+	CREATE PROCEDURE add_student(
+    IN p_name VARCHAR(100),  -- MySQL requires a specific length for VARCHAR
+    IN p_age INT             -- INTEGER or INT works fine
+	)
+	BEGIN
+		INSERT INTO students(name, age) VALUES (p_name, p_age);
+	END$$
+	DELIMITER ;</pre>	   
 	</p>

@@ -776,3 +776,10 @@ public class DeleteData {
 	<p>What Happens If You Add a SELECT Query?:<br>If you try to add a SELECT query to a batch, the JDBC driver 
 	(such as PostgreSQL JDBC Driver) will throw an exception because it cannot return a ResultSet through 
 	executeBatch()</p>
+	<p><h3>STORED PROCEDURE:</h3>A stored procedure is a set of SQL statements stored in the database that can perform operations
+	like insert, update, delete, or even complex calculations.<br>
+	<h5>Advantages:</h5>Reusable – Write once, use many times.<b5>
+			   Reduces network traffic<b5>
+			   Can accept input parameters and return output values.<b5>
+			   Improves security – Users can execute procedures without direct table access.<br>
+	</p>

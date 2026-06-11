@@ -807,5 +807,7 @@ public class DeleteData {
 	BEGIN
 		INSERT INTO students(name, age) VALUES (p_name, p_age);
 	END$$
-	DELIMITER ;</pre>	   
+	DELIMITER ;</pre>
+	How to call it in MySQL:The way you call a procedure in MySQL uses the exact same keyword:<br>
+	CALL add_student('Sheela', 25);	   
 	</p>

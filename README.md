@@ -789,5 +789,13 @@ public class DeleteData {
 	BEGIN
     -- SQL statements;
 	END$$
-	DELIMITER ;</pre>		   
+	DELIMITER ;</pre>	
+	<h5>Key Differences Explained:</h5>
+	DELIMITER $$ and DELIMITER ;: MySQL needs you to temporarily change the command delimiter from a semicolon ; to 
+	something else (like $$).<br> This tells MySQL to treat the entire block—from BEGIN to END—as a single statement 
+	rather than executing it line-by-line when it hits the first internal semicolon.<br>
+	No LANGUAGE clause: MySQL does not use a language specification like LANGUAGE plpgsql. It automatically uses 
+	MySQL's built-in procedural language.<br>
+	No AS $$: Instead of the AS $$ string literal syntax used in PostgreSQL, MySQL transitions directly from the 
+	parameter list to the BEGIN keyword.<br>	   
 	</p>

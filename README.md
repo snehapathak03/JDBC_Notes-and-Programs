@@ -710,3 +710,104 @@ public class DeleteData {
 		}catch(SQLException e) {
 			System.err.println(e.getMessage());
 		}</pre>
+	<h3>INSERT DATA USING PreparedStatement:</h3><pre>
+	public static void main(String[] args) {
+				String url = "jdbc:mysql://localhost:3306/Students";
+				String username = "root";
+				String password = "sona@2003";
+				String query = "INSERT INTO employee(id, name, job_title, salary) VALUES (?, ?, ?, ?);";
+				try {
+					Class.forName("com.mysql.cj.jdbc.Driver");
+					System.out.println("Drivers loaded successfully.");
+				}catch(ClassNotFoundException e) {
+					System.out.println(e.getMessage());
+				}
+				try {
+					Connection con = DriverManager.getConnection(url, username, password);
+					System.out.println("Connection Establish Successfully.");
+					//Statement st = con.createStatement();
+					PreparedStatement ps = con.prepareStatement(query);
+					ps.setInt(1, 15);
+					ps.setString(2, "sheela");
+					ps.setString(3, "Project Manager");
+					ps.setDouble(4, 98000.00);	
+					int rowsAffected = ps.executeUpdate();
+					if(rowsAffected > 0) {
+						System.out.println("Data inserted successfully");
+					}else {
+						System.out.println("Data inserted failed");
+					}
+					ps.close();
+					con.close();
+					System.out.println();
+					System.out.println("Connection closed Successfully.");
+				}catch(SQLException e) {
+					System.err.println(e.getMessage());
+				}
+	}
+}</pre>
+<h3>BATCH PROCESSING:</h3><p> in jdbc refers to the ability to group multiple SQL statemnt 
+	together and execute them as a single unit or batch, rather that executing each
+	statemnt individually.</p>
+<h5>Why Batch processing?? </h5><p>
+	Without batching:Each statement is sent separately to DB.<br>Each has its own network round trip.<br>
+					This adds overhead and slows things down for bulk operations.<br>
+	With batching:Multiple statements are sent in one go.<br>Fewer round trips.Significant performance gain 
+	for large inserts/updates.</p>
+<h3>METHODS FOR BATCH PROCESSING :</h3><p>
+	addBatch(String sqlQuery):This method of Statement and PreparedStatement is used to add individual 
+	SQL statements to the batch.<br>
+	executeBatch():This method executes all the statements previously added to the batch.<br> 
+	It returns an array of integers, where each element represents the update count for the 
+	corresponding statement in the batch.<br>
+	setAutoCommit(boolean value):By default, many database connections operate in auto-commit mode.<br> 
+	This means that every individual SQL statement executed is automatically committed to the database
+	as a separate transaction.<br> If a statement completes successfully, its changes are immediately made permanent.<br>
+	When setAutoCommit(false) is called, the automatic committing of individual statements is turned off.<br>
+	commit():It is used to permanently save any transaction into the database.In JDBC, batch processing allows 
+	multiple SQL statements to be sent to the database in a single round trip, improving performance.<br> The commit()
+	method is then explicitly called on the Connection object to save these batched operations.</p>
+	<p>Can We Include SELECT Query in Batch Processing?<i>No.</i>In JDBC batch processing, you cannot include a SELECT query 
+	in the batch.<br>
+	Why?:Statement.addBatch() is meant for update operations such as:INSERT,UPDATE,DELETE,CREATE,DROP,ALTER.<br>A SELECT
+	query returns a ResultSet, whereas executeBatch() returns an int[] representing the number of rows affected by 
+	each statement.<br>Since executeBatch() is designed to handle update counts and not query results, a SELECT statement
+	cannot be included in batch processing.</p>
+	<p>What Happens If You Add a SELECT Query?:<br>If you try to add a SELECT query to a batch, the JDBC driver 
+	(such as PostgreSQL JDBC Driver) will throw an exception because it cannot return a ResultSet through 
+	executeBatch()</p>
+	<p><h3>STORED PROCEDURE:</h3>A stored procedure is a set of SQL statements stored in the database that can perform operations
+	like insert, update, delete, or even complex calculations.<br>
+	<h5>Advantages:</h5>Reusable – Write once, use many times.<b5>
+			   Reduces network traffic<b5>
+			   Can accept input parameters and return output values.<b5>
+			   Improves security – Users can execute procedures without direct table access.<br>
+	<pre>DELIMITER $$
+	CREATE PROCEDURE procedure_name (
+    -- Parameters are defined here (e.g., IN p_name VARCHAR(50))
+	)
+	BEGIN
+    -- SQL statements;
+	END$$
+	DELIMITER ;</pre>	
+	<h5>Key Differences Explained:</h5>
+	DELIMITER $$ and DELIMITER ;: MySQL needs you to temporarily change the command delimiter from a semicolon ; to 
+	something else (like $$).<br> This tells MySQL to treat the entire block—from BEGIN to END—as a single statement 
+	rather than executing it line-by-line when it hits the first internal semicolon.<br>
+	No LANGUAGE clause: MySQL does not use a language specification like LANGUAGE plpgsql. It automatically uses 
+	MySQL's built-in procedural language.<br>
+	No AS $$: Instead of the AS $$ string literal syntax used in PostgreSQL, MySQL transitions directly from the 
+	parameter list to the BEGIN keyword.<br>
+	<pre>Translating the add_student Example to MySQL
+	DELIMITER $$
+	CREATE PROCEDURE add_student(
+    IN p_name VARCHAR(100),  -- MySQL requires a specific length for VARCHAR
+    IN p_age INT             -- INTEGER or INT works fine
+	)
+	BEGIN
+		INSERT INTO students(name, age) VALUES (p_name, p_age);
+	END$$
+	DELIMITER ;</pre>
+	How to call it in MySQL:The way you call a procedure in MySQL uses the exact same keyword:<br>
+	CALL add_student('Sheela', 25);	   
+	</p>

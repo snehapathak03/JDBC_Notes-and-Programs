@@ -832,4 +832,8 @@ public class DeleteData {
 		VALUES(p_empid,p_name,p_designation,p_salary);
 	END $$
 	DELIMITER ;</p>
+	<p><u>Notes:</u><br>
+		IN = Input Parameter<br>
+		Values are passed from user to procedure<br>
+		DELIMITER $$ is required so MySQL knows where the procedure ends</p>
 	

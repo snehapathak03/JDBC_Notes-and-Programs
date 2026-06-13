@@ -852,4 +852,15 @@ public class DeleteData {
 			FROM employee
 			WHERE name = p_name;
 		END $$
-		DELIMITER ;</pre></p>	
+		DELIMITER ;</pre></p>
+	<p><h3>4. Calling Procedure with OUT Parameter in MySQL:</h3>
+		Create a variable first:SET @salary = 0;<br>
+		Call procedure:<br>
+		CALL get_employee_salary('Sharath', @salary);<br>
+		Display returned value:	SELECT @salary;<br>
+		<pre>Output:
+		+---------+
+		| @salary |
+		+---------+
+		| 50000   |
+		+---------+</pre></p>		

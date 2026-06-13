@@ -811,3 +811,11 @@ public class DeleteData {
 	How to call it in MySQL:The way you call a procedure in MySQL uses the exact same keyword:<br>
 	CALL add_student('Sheela', 25);	   
 	</p>
+	<p>1. Creating Stored Procedure in MySQL (Using Query Editor):
+	Assume table:
+	CREATE TABLE employee(
+		id INT,
+		name VARCHAR(50),
+		job_title VARCHAR(50),
+		salary DOUBLE
+	);</p>

@@ -811,7 +811,7 @@ public class DeleteData {
 	How to call it in MySQL:The way you call a procedure in MySQL uses the exact same keyword:<br>
 	CALL add_student('Sheela', 25);	   
 	</p>
-	<p>1. Creating Stored Procedure in MySQL (Using Query Editor):
+	<p><h3>1. Creating Stored Procedure in MySQL (Using Query Editor):</h3>
 	Assume table:
 	CREATE TABLE employee(
 		id INT,
@@ -819,3 +819,17 @@ public class DeleteData {
 		job_title VARCHAR(50),
 		salary DOUBLE
 	);</p>
+	<h5>Procedure with IN Parameters</h5><p>
+	DELIMITER $$
+	CREATE PROCEDURE add_employee(
+		IN p_id INT,
+		IN p_name VARCHAR(50),
+		IN p_job_title VARCHAR(50),
+		IN p_salary DOUBLE
+	)
+	BEGIN
+		INSERT INTO employee(empid,name,designation,salary)
+		VALUES(p_empid,p_name,p_designation,p_salary);
+	END $$
+	DELIMITER ;</p>
+	

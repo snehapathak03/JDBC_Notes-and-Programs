@@ -840,3 +840,16 @@ public class DeleteData {
 		CALL add_employee(1,'Sheela','HR',50000);<br>
 		After execution:SELECT * FROM employee;<br>
 		Output:1   Sheela   HR   50000</p>
+	<p><h3>3. Procedure with IN and OUT Parameters:</h3>
+	<pre>	DELIMITER $$
+		CREATE PROCEDURE get_employee_salary(
+		IN p_name VARCHAR(50),
+		OUT p_salary DOUBLE
+		)
+		BEGIN
+			SELECT salary
+			INTO p_salary
+			FROM employee
+			WHERE name = p_name;
+		END $$
+		DELIMITER ;</pre></p>	

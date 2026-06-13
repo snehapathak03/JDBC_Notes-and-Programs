@@ -813,14 +813,14 @@ public class DeleteData {
 	</p>
 	<p><h3>1. Creating Stored Procedure in MySQL (Using Query Editor):</h3>
 	Assume table:
-	CREATE TABLE employee(
+	<pre>CREATE TABLE employee(
 		id INT,
 		name VARCHAR(50),
 		job_title VARCHAR(50),
 		salary DOUBLE
-	);</p>
+	);</pre></p>
 	<h5>Procedure with IN Parameters</h5><p>
-	DELIMITER $$
+	<pre>DELIMITER $$
 	CREATE PROCEDURE add_employee(
 		IN p_id INT,
 		IN p_name VARCHAR(50),
@@ -831,9 +831,12 @@ public class DeleteData {
 		INSERT INTO employee(empid,name,designation,salary)
 		VALUES(p_empid,p_name,p_designation,p_salary);
 	END $$
-	DELIMITER ;</p>
+	DELIMITER ;</pre></p>
 	<p><u>Notes:</u><br>
 		IN = Input Parameter<br>
 		Values are passed from user to procedure<br>
 		DELIMITER $$ is required so MySQL knows where the procedure ends</p>
-	
+	<p><h3>2. Calling Stored Procedure in MySQL:</h3>
+		CALL add_employee(1,'Sheela','HR',50000);<br>
+		After execution:SELECT * FROM employee;<br>
+		Output:1   Sheela   HR   50000</p>

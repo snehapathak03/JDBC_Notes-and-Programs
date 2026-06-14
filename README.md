@@ -856,7 +856,6 @@ public class BatchProcessingUsingPreparedStatement {
 		ps.close();
 		con.close();
 		System.out.println("Connections closed successfully...");
-	}
 }</pre>
 <h3>INSERTING IMAGE TO DATABASE USING JDBC:</h3><pre>
 public static void main(String[] args) {
@@ -938,7 +937,7 @@ public static void main(String[] args) {
 					e.printStackTrace();
 				}
 }</pre>
-	<p><h3>STORED PROCEDURE:</h3>A stored procedure is a set of SQL statements stored in the database that can perform operations
+<p><h3>STORED PROCEDURE:</h3>A stored procedure is a set of SQL statements stored in the database that can perform operations
 	like insert, update, delete, or even complex calculations.<br>
 	<h5>Advantages:</h5>Reusable – Write once, use many times.<b5>
 			   Reduces network traffic<b5>

@@ -858,6 +858,45 @@ public class BatchProcessingUsingPreparedStatement {
 		System.out.println("Connections closed successfully...");
 	}
 }</pre>
+<h3>INSERTING IMAGE TO DATABASE USING JDBC:</h3><pre>
+public static void main(String[] args) {
+		String url = "jdbc:mysql://localhost:3306/Students";
+		String username = "root";
+		String password = "sona@2003";
+		String image_path = "C:\\Users\\sneha2003\\OneDrive\\Desktop\\img\\1.jpeg";
+		String query = "INSERT INTO image_table(image_data) VALUES (?)";
+		try {
+			//1.load and register the driver
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			System.out.println("Drivers loaded successfully.");
+		}catch(ClassNotFoundException e) {
+			System.out.println(e.getMessage());
+		}
+		try {
+			//2.Establish connection 
+			Connection con = DriverManager.getConnection(url, username, password);
+			System.out.println("Connection Establish Successfully......");
+			FileInputStream fileInputStream = new FileInputStream(image_path);
+			byte[] imageData = new byte[fileInputStream.available()]; 
+			fileInputStream.read(imageData);
+			PreparedStatement ps = con.prepareStatement(query);
+			ps.setBytes(1, imageData);
+			int afftectedRows = ps.executeUpdate();
+			if(afftectedRows > 0 ) {
+				System.out.println("Image inserted Successfully!!");
+			}else {
+				System.out.println("Image not Inserted.....");
+			}	
+		}catch(SQLException e) {
+			System.out.println(e.getMessage());
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
+	}</pre>
 	<p><h3>STORED PROCEDURE:</h3>A stored procedure is a set of SQL statements stored in the database that can perform operations
 	like insert, update, delete, or even complex calculations.<br>
 	<h5>Advantages:</h5>Reusable – Write once, use many times.<b5>

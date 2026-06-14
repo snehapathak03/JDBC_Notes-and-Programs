@@ -897,6 +897,56 @@ public static void main(String[] args) {
 			e.printStackTrace();
 		} 
 	}</pre>
+	<h3>EXTRACTING THE IMAGE FROM DATABASE USING JDBC:</h3><pre>
+	import java.io.OutputStream;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+public class InsertImageToFolder {
+			//In previous example we have copyed the path from the floder now we are going to copy image to folder
+	public static void main(String[] args) {
+				String url = "jdbc:mysql://localhost:3306/Students";
+				String username = "root";
+				String password = "sona@2003";
+				String folder_path = "C:\\Users\\sneha2003\\OneDrive\\Desktop\\img\\";
+				String query = "SELECT image_data FROM image_table WHERE image_id = (?)";
+				try {
+					//1.load and register the driver
+					Class.forName("com.mysql.cj.jdbc.Driver");
+					System.out.println("Drivers loaded successfully.");
+				}catch(ClassNotFoundException e) {
+					System.out.println(e.getMessage());
+				}
+				try {
+					//2.Establish connection 
+					Connection con = DriverManager.getConnection(url, username, password);
+					System.out.println("Connection Establish Successfully......");
+					PreparedStatement ps = con.prepareStatement(query);
+					ps.setInt(1, 1);
+					ResultSet rs = ps.executeQuery();
+					if(rs.next()) {	
+						byte[] image_data = rs.getBytes("image_data");
+						String image_path = folder_path+"extractedImage.jpeg";
+						OutputStream os = new FileOutputStream(image_path);
+						os.write(image_data);
+						System.out.println("Image extracted successfullt.....");
+						
+					}else {
+						System.out.println("Image Not Found....");
+					}	
+				}catch(SQLException e) {
+					System.out.println(e.getMessage());
+				} catch (FileNotFoundException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+	}
+}</pre>
 	<p><h3>STORED PROCEDURE:</h3>A stored procedure is a set of SQL statements stored in the database that can perform operations
 	like insert, update, delete, or even complex calculations.<br>
 	<h5>Advantages:</h5>Reusable – Write once, use many times.<b5>

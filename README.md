@@ -898,14 +898,6 @@ public static void main(String[] args) {
 		} 
 	}</pre>
 	<h3>EXTRACTING THE IMAGE FROM DATABASE USING JDBC:</h3><pre>
-	import java.io.OutputStream;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-public class InsertImageToFolder {
-			//In previous example we have copyed the path from the floder now we are going to copy image to folder
 	public static void main(String[] args) {
 				String url = "jdbc:mysql://localhost:3306/Students";
 				String username = "root";
@@ -945,7 +937,6 @@ public class InsertImageToFolder {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-	}
 }</pre>
 	<p><h3>STORED PROCEDURE:</h3>A stored procedure is a set of SQL statements stored in the database that can perform operations
 	like insert, update, delete, or even complex calculations.<br>

@@ -1,0 +1,9 @@
+Maven Fundamentals
+	Learning Objectives ->
+	1]Explain what Maven is.
+	2]Understand why Maven is used.
+	3]Create a Maven project in Eclipse.
+	4]Understand the Maven project structure.
+	5]Read and modify a pom.xml.
+	6]Add dependencies.
+	7]Build a project using Maven.

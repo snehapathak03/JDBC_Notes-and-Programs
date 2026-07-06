@@ -47,4 +47,33 @@ Part 5: Maven Architecture
 				│
 				▼
 			Builds Project    
-	         
+Part 6: Maven Repositories:There are three repositories.
+	1. Local Repository:Stored on your computer.Windows location:C:\Users\<your_username>\.m2\repository.
+	Once Maven downloads a dependency, it is stored here.
+	2. Central Repository:This is the official online repository maintained by Maven.Whenever a dependency isn't 
+	available locally, Maven downloads it from the Central Repository.
+	3. Remote Repository:Some companies maintain their own private repositories containing internal libraries.
+
+	Part 7: Standard Maven Project Structure
+			Banking-System
+			│
+			├── src
+			│   ├── main
+			│   │   ├── java
+			│   │   └── resources
+			│   │
+			│   └── test
+			│       └── java
+			│
+			├── target
+			│
+			├── pom.xml
+			│
+			└── README.md
+	Folder Purpose
+	Folder				Purpose
+	src/main/java		Application source code
+	src/main/resources	Configuration files
+	src/test/java		Unit tests
+	target				Compiled output
+	pom.xml				Maven configuration	         

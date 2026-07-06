@@ -21,4 +21,12 @@ Part 2: Why Was Maven Created?Imagine you're writing a JDBC project.To connect J
 
 Part 3: What Problems Does Maven Solve?Before Maven:Manual JAR downloads,Version conflicts,Missing dependencies,Different project structures,
         Difficult collaboration.With Maven:Automatic dependency download,Standard project structure,Easy builds,Easy deployment,Better 
-        collaboration.    
+        collaboration.   
+Part 4: What is a Dependency?A dependency is an external library that your project uses.Examples:
+	Library				Purpose
+	MySQL Connector		Connect Java to MySQL
+	JUnit				Testing
+	Lombok				Reduce boilerplate code
+	Spring Boot			Build backend applications
+	Hibernate			ORM[OBJECT RELATIONAL MAPPING][used to btidge the gap between oops(Java) and relational db(MySQL)]
+	         

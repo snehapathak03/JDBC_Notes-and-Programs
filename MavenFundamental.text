@@ -7,3 +7,18 @@ Maven Fundamentals
 	5]Read and modify a pom.xml.
 	6]Add dependencies.
 	7]Build a project using Maven.
+Part 1: What is Maven? Maven is a Build Automation and Dependency Management Tool for Java projects.It helps developers
+	    to Build applications, Download libraries automatically, Manage project dependencies, Package applications,Run tests,
+	    and Maintain consistent project structures.Think of Maven as your project manager.
+
+Part 2: Why Was Maven Created?Imagine you're writing a JDBC project.To connect Java with MySQL you need:mysql-connector-j.jar 
+        Without Maven you would:Download the JAR manually.Copy it into your project.Add it to the build path.Repeat this for 
+        every new project.Update it manually when a new version is released.Now imagine	your project needs:MySQL,JUnit,Lombok,
+        Jackson,Spring Boot,Hibernate,Log4j,Mockito.You would end up downloading dozens of JAR files manually.That's why Maven 
+        exists.Real-World Analogy: Imagine you're building a house.Without Maven:You go	to different stores yourself and buy 
+        every brick,pipe, wire, window, and screw.With Maven:You give the contractor a list of required materials, and they 
+        automatically bring everything you need.The contractor is Maven.
+
+Part 3: What Problems Does Maven Solve?Before Maven:Manual JAR downloads,Version conflicts,Missing dependencies,Different project structures,
+        Difficult collaboration.With Maven:Automatic dependency download,Standard project structure,Easy builds,Easy deployment,Better 
+        collaboration.    

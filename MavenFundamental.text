@@ -22,6 +22,7 @@ Part 2: Why Was Maven Created?Imagine you're writing a JDBC project.To connect J
 Part 3: What Problems Does Maven Solve?Before Maven:Manual JAR downloads,Version conflicts,Missing dependencies,Different project structures,
         Difficult collaboration.With Maven:Automatic dependency download,Standard project structure,Easy builds,Easy deployment,Better 
         collaboration.   
+
 Part 4: What is a Dependency?A dependency is an external library that your project uses.Examples:
 	Library				Purpose
 	MySQL Connector		Connect Java to MySQL
@@ -47,6 +48,7 @@ Part 5: Maven Architecture
 				│
 				▼
 			Builds Project    
+
 Part 6: Maven Repositories:There are three repositories.
 	1. Local Repository:Stored on your computer.Windows location:C:\Users\<your_username>\.m2\repository.
 	Once Maven downloads a dependency, it is stored here.
@@ -54,7 +56,7 @@ Part 6: Maven Repositories:There are three repositories.
 	available locally, Maven downloads it from the Central Repository.
 	3. Remote Repository:Some companies maintain their own private repositories containing internal libraries.
 
-	Part 7: Standard Maven Project Structure
+Part 7: Standard Maven Project Structure
 			Banking-System
 			│
 			├── src
@@ -76,4 +78,23 @@ Part 6: Maven Repositories:There are three repositories.
 	src/main/resources	Configuration files
 	src/test/java		Unit tests
 	target				Compiled output
-	pom.xml				Maven configuration	         
+	pom.xml				Maven configuration	 
+           
+Part 8: What is pom.xml?POM stands for Project Object Model.It contains information about:Project name,Version,
+	Dependencies,Plugins,Java version and Build settings.
+	Example:
+	<project>
+		<modelVersion>4.0.0</modelVersion>
+		<groupId>com.sneha</groupId>
+		<artifactId>banking-system</artifactId>
+		<version>1.0</version>
+	</project>
+
+Part 9: Maven Coordinates:Every Maven project has four important identifiers:
+	Element		Example			Meaning
+	groupId		com.sneha		Organization or package
+	artifactId	banking-system	Project name
+	version		1.0				Current version
+	packaging	jar				Output type
+
+Part 10: Maven Lifecycle:The most common lifecycle phases are:validate ->	compile -> test -> package -> verify -> install -> deploy

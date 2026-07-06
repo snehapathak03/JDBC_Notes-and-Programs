@@ -29,4 +29,22 @@ Part 4: What is a Dependency?A dependency is an external library that your proje
 	Lombok				Reduce boilerplate code
 	Spring Boot			Build backend applications
 	Hibernate			ORM[OBJECT RELATIONAL MAPPING][used to btidge the gap between oops(Java) and relational db(MySQL)]
+
+Part 5: Maven Architecture
+			Developer
+				│
+				▼
+			pom.xml
+				│
+				▼
+			Maven
+				│
+				▼
+			Central Repository
+				│
+				▼
+			Downloads Required Libraries
+				│
+				▼
+			Builds Project    
 	         

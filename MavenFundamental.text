@@ -110,3 +110,41 @@ Part 1: What Happens When You Click "Run"?Imagine your project contains:
 		├── Properties File
 		When you click Run, Java does not directly execute your source code.It first:Checks your code,Downloads missing dependencies,
 		Compiles Java files,Runs tests,Creates a JAR, and then Executes the application.Maven automates all of this.
+Part 2: Maven Build Lifecycle:A Lifecycle is a predefined sequence of phases that Maven executes to build your project.
+		There are 3 Lifecycles:
+		Lifecycle	Purpose
+		Default		Build the project
+		Clean		Remove old compiled files
+		Site		Generate project documentation
+		The Default Lifecycle is the most commonly used.
+Part 3: Default Lifecycle Phases
+		validate
+		↓
+		compile
+		↓
+		test
+		↓
+		package
+		↓
+		verify
+		↓
+		install
+		↓
+		deploy
+		Let's understand each phase.
+		1. Validate:Checks whether:pom.xml is correct.Required files exist.Project structure is valid.No Java code is compiled yet.
+		Command:mvn validate
+		2. Compile:Compiles all Java source files.Example:Student.java,Employee.java,Main.java becomes:Student.class,Employee.class,Main.class
+		Command:mvn compile
+		Output location:target/classes
+		3. Test:Runs all unit tests (usually JUnit tests).Example:StudentTest.java
+		Command:mvn test
+		4. Package:Creates the final package.Usually:StudentManagement.jar  or  StudentManagement.war
+		Command:mvn package
+		Output:target/
+		5. Verify:Runs additional checks on the packaged application.
+		Command:mvn verify
+		6. Install:Copies your package into your Local Repository.Command:mvn install
+		Location:C:\Users\<username>\.m2\repository
+		Now other local Maven projects can use it as a dependency.
+		7. Deploy:Uploads your package to a Remote Repository (like Nexus or Artifactory).Mostly used in companies.	Command:mvn deploy

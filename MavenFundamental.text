@@ -165,3 +165,28 @@ Part 5: What is the target Folder?
 				├── generated-sources
 				├── MavenDemo-1.0.jar
 		The target folder contains generated files. Never edit them manually.
+Part 6: What is a Plugin?
+		A Plugin tells Maven how to perform a specific task.Examples:Compile Java code,Create JAR files, Run tests, Generate reports.
+		Without plugins, Maven wouldn't know how to build your project.
+		Common Plugins
+		Plugin						Purpose
+		Maven Compiler Plugin		Compile Java
+		Maven Surefire Plugin		Run Tests
+		Maven JAR Plugin			Create JAR
+		Spring Boot Maven Plugin	Run Spring Boot apps
+		
+		Example: Maven Compiler Plugin
+		<build>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.11.0</version>
+					<configuration>
+						<source>21</source>
+						<target>21</target>
+					</configuration>
+				</plugin>
+			</plugins>
+		</build>
+		This tells Maven to compile using Java 21.		

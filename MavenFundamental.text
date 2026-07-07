@@ -148,3 +148,20 @@ Part 3: Default Lifecycle Phases
 		Location:C:\Users\<username>\.m2\repository
 		Now other local Maven projects can use it as a dependency.
 		7. Deploy:Uploads your package to a Remote Repository (like Nexus or Artifactory).Mostly used in companies.	Command:mvn deploy
+Part 4: Maven Commands
+		Command			Purpose
+		mvn clean		Delete target folder
+		mvn compile		Compile source code
+		mvn test		Run tests
+		mvn package		Create JAR/WAR
+		mvn install		Install into local repository
+		mvn deploy		Upload to remote repository
+Part 5: What is the target Folder?
+		After running:mvn package
+				target
+				│
+				├── classes
+				├── test-classes
+				├── generated-sources
+				├── MavenDemo-1.0.jar
+		The target folder contains generated files. Never edit them manually.

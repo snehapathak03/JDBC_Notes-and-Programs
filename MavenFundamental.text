@@ -190,3 +190,15 @@ Part 6: What is a Plugin?
 			</plugins>
 		</build>
 		This tells Maven to compile using Java 21.		
+Part 7: Dependency Scope:Not every dependency is needed all the time.Maven provides scopes.
+		1. Compile (Default)->Available:Compile, Test, Runtime.Example:<scope>compile</scope>.Used for:MySQL, Spring Boot.
+		2. Test->Only available during testing.Example:<scope>test</scope>.Used for:JUnit.
+		3. Runtime->Needed only when running the application.Example:<scope>runtime</scope>.
+		4. Provided->Provided by the server.Example:Servlet API
+		5. System->Uses a local JAR file path. Rarely used today.
+		Dependency Scope Summary
+		Scope		Compile	Test	Run
+		compile		✅		✅		✅
+		test		❌		✅		❌
+		runtime		❌		❌		✅
+		provided	✅		✅		❌	

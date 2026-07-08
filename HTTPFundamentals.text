@@ -73,5 +73,37 @@ Chapter 6 – URL
 	    URL: is a subset of URl.It explicitly states the network location and the protocol needs to retrive the resource.
 	    URN: A Uniform Resource Name is another rare type of URI. It names a resouce uniquesly like an ISBN book number but does 
 	    not tell you where it is located online.]                
-		 
+Chapter 7 – HTTP
+	    HTTP stands for HyperText Transfer Protocol.It is the language used by clients and servers to communicate.
+	    Example:Browser -> HTTP -> Spring Boot
+	    Why HTTP?Without HTTP, Browser and Server cannot understand each other.Like English, Hindi, Marathi.HTTP is their common language.
+	    [Basic system to move data between your browser and a website. it sends all data in plain text.Anyone can read 
+	    and steal your data if they intercept the message.It uses port 80 by default.]
+
+Chapter 8 – HTTPS
+	    HTTPS means HTTP + SSL/TLS Encryption
+	    [It is the secure version of HTTP. It adds a security layer to scramble your data. It stops hackers from reading private details 
+        like password or credit card number.It uses port 443 by default.
+	    SSl: Secure Sockets Layer.An older security technology used to create an encrupted link between a web browser and a server.
+	    TLS:Transport Layer Security.The update, modern,and secure replacement for SSL. 
+	    How they work together: HTTPS uses SSL or TLS to lock and protect the data you send over standard HTTP]
+	    Difference
+	    HTTP			HTTPS
+	    Not Secure		Secure
+	    Port 80			Port443
+	    Data Visible	Data Encrypted
+	    Faster			Slightly Slower
+	    No SSL			SSL Certificate
+	    Example:http://example.com - Not secure
+	    https://amazon.in - Secure
+
+Chapter 9 – Ports:Think of a server as a building.A building has many rooms.Each room has a number.Those room numbers are Ports.
+	    Common Ports
+	    Port	Service
+	    80		HTTP
+	    443		HTTPS
+	    3306	MySQL
+	    8080	Spring Boot
+	    5432	PostgreSQL
+	    22		SSH		 
 	

@@ -106,4 +106,148 @@ Chapter 9 – Ports:Think of a server as a building.A building has many rooms.Ea
 	    8080	Spring Boot
 	    5432	PostgreSQL
 	    22		SSH		 
+Chapter 10 – HTTP Request:A Request is sent by the Client.Contains:URL,Method,Headers,Body.
+	    Example:GET /students, 
+	    HTTP Request Structure: GET /students HTTP/1.1
+	    Host: localhost:8080
+	    Accept: application/json
+	    [IMPORTANT NOTES:
+	    What is an HTTP Request?When a client(browser,Postman,mobile app,etc.)wants some data from a server,it sends an HTTP Request.Example:
+	    	Client (Browser/Postman)
+	    		|
+	    		|  HTTP Request
+	    		|
+	    		V
+	    	Server (Spring Boot)
+	    Imagine you are ordering food.You are the Client,Restaurant is a Server,Order Slip is the HTTP Request,Food isHTTP Response.
+	    Example HTTP Request:GET /students HTTP/1.1
+	    Host: localhost:8080
+	    Accept: application/json
+	    This request has 3 main parts:Request Line,Headers and Body (optional).
+	    1. GET /students:This is called the Request Line.
+	    GET /students->It has two parts:GET and /students.
+	    What is GET?GET is an HTTP Method.It tells the server what action you want to perform.Example:GET means "Please give me data."
+	    Think of it as:Teacher,Please show me the list of students.
+	    What is /students?/students is called the Resource or Endpoint.It tells the server:Which data do you want?
+	    Example:/students means I want the Students data.Real Example:Suppose your database has:
+	    ID	Name
+	    1	Sneha
+	    2	Rahul
+	    3	Amit
+	    When you send GET /students the server understands:"Give me all students.".Another Example:GET /students/5 means Give me Student whose ID = 5.
+	    POST Example:POST /students means Create a new student.
+	    PUT Example:PUT /students/5 means Update Student ID = 5.
+	    DELETE Example:DELETE /students/5 means Delete Student ID = 5.
+	    2. HTTP/1.1
+	    Complete line:GET /students HTTP/1.1  .Here,HTTP/1.1 means "I am communicating using HTTP Version 1.1"
+	    Different versions exist:HTTP/1.0:Old,	HTTP/1.1:Most common, 	HTTP/2:Faster,	HTTP/3:Newest
+	    You normally don't type this yourself; browsers and Postman include it automatically.
+	    3. Host: localhost:8080
+	    This tells the request:Which server should receive this request?
+	    Let's break it down.
+	    localhost means Your own computer.
+	    8080 means The port number.
+	    Think of a computer like a large apartment building.
+	    Computer
+	    │
+	    ├── Port 80
+	    ├── Port 443
+	    ├── Port 3306 (MySQL)
+	    ├── Port 8080 (Spring Boot)
+	    ├── Port 8081
+	    Every application listens on a different port.
+	Examples:
+	Application	Port
+	Spring Boot	8080
+	MySQL		3306
+	Tomcat		8080
+	HTTPS		443
+	When Spring Boot starts, you'll see something like:Tomcat started on port(s): 8080.So,Host: localhost:8080 means 
+	Send this request to my computer on port 8080.
 	
+	4. Accept: application/json
+	This is called a Request Header.It tells the server:"I want the response in JSON format."Imagine you're ordering a book.
+	You say:Please give me the English version.Similarly,Accept: application/json means Please send JSON.
+	Example Response Instead of Student Name Sneha the server sends
+	[
+		{
+			"id":1,
+			"name":"Sneha"
+		}
+	]
+	because we requested JSON.Other Accept Types  are: 
+	Accept: text/html means Send HTML.
+	Accept: application/xml means Send XML.
+	Accept: image/png means Send an image. 
+	Complete Flow:Suppose you type this in Postman:GET
+	URL:http://localhost:8080/students
+	Postman actually sends:GET /students HTTP/1.1
+	Host: localhost:8080
+	Accept: application/json
+	Spring Boot receives it.
+
+	Your controller:
+		@GetMapping("/students")
+		public List<Student> getStudents() {
+			...
+		}
+	matches the request.
+
+	The server returns:
+	[
+		{
+			"id":1,
+			"name":"Sneha"
+		},
+		{
+			"id":2,
+			"name":"Rahul"
+		}
+	]
+	Visual Diagram
+                POSTMAN
+
+	URL:http://localhost:8080/students
+           │
+           ▼
+	HTTP Request
+	GET /students HTTP/1.1
+	Host: localhost:8080
+	Accept: application/json
+           │
+           ▼
+	Spring Boot Server
+	@GetMapping("/students")
+           │
+           ▼
+		Database
+
+           │
+           ▼
+	HTTP Response
+
+	HTTP/1.1 200 OK
+	[
+		{
+			"id":1,
+			"name":"Sneha"
+		}
+	]
+	Summary
+	Part						Meaning								Example
+	GET							HTTP method (what you want to do)	Fetch data
+	/students					Resource or endpoint				Students data
+	HTTP/1.1					HTTP protocol version				Communication standard
+	Host: localhost:8080		Which server to contact				Your local Spring Boot app
+	Accept: application/json	Desired response format				JSON
+
+	Chapter 11 – HTTP Response:The Server sends	Status Code:Headers,Body
+	Example:
+	HTTP/1.1 200 OK
+	Content-Type: application/json
+	[
+		{
+			"id":1,
+			"name":"Sneha"
+		}
+	]	

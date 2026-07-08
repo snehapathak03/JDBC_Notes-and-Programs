@@ -1,0 +1,41 @@
+Day 3 – HTTP Fundamentals (Complete Beginner to Interview Level)
+	✅ Day 1 – Maven Basics
+	✅ Day 2 – Advanced Maven
+
+HTTP (HyperText Transfer Protocol):Every Spring Boot application, REST API, website, and mobile app uses HTTP.
+Chapter 1 – How Does the Internet Work?Imagine you open your browser and type:www.google.com
+        	What happens?
+		    You
+	    		↓
+    		Browser
+    			↓
+	    	Internet
+			    ↓
+		    Google Server
+			    ↓
+    		Response
+		    	↓
+	    	Browser Displays Webpage
+            Everything happens in a fraction of a second.Real-Life Example:Imagine you're ordering pizza.You → Customer,Restaurant → Server,
+            Menu → Website,Order → HTTP Request,Pizza → HTTP Response.This is exactly how websites work.
+Chapter 2 – What is a Client?A Client is a device or application that requests information.Examples:Chrome,Firefox,
+        	Edge,Mobile App,Postman,Java Application.Client initiates communication.Example:Browser → Google.
+
+Chapter 3 – What is a Server?A Server is a computer that receives requests and sends responses.Examples:Amazon Server,Netflix Server,Flipkart Server.
+	        Spring Boot Application->Example:Browser → Spring Boot Server
+	        Client-Server Architecture
+        		Client
+			        |
+		        HTTP Request
+		        	|
+        		Internet
+        			|
+		        Server
+		        	|
+        		Database
+        			|
+        		HTTP Response
+			        |
+		        Client
+		 
+	

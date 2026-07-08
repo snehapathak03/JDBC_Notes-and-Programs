@@ -294,3 +294,22 @@ Chapter 12 – HTTP Methods
 	201:Created Successfully
 	404:Page Not Found
 	500:Server Crashed    
+Chapter 14 – Headers:Headers carry extra information.
+	    Example:Content-Type,Authorization,Accept,User-Agent
+	    ExampleContent-Type:application/json
+	
+Chapter 15 – Cookies:A Cookie is a small file stored in your browser.
+	    Example:You login to Gmail.Close browser.Open again.Still logged in.
+	    Why? because of Cookie.
+
+Chapter 16 – Session:Session is stored on the Server.Cookie stores only the Session ID.
+	    Browser -> Cookie -> Server -> Session	
+	    Cookie vs Session
+	    Cookie			Session
+	    Browser			Server
+	    Less Secure		More Secure
+	    Small Data		Large Data
+	    Client Side		Server Side
+	
+Chapter 17 – Complete HTTP Flow:User->Chrome->DNS->Server IP->HTTP Request->Spring Boot->Business Logic->Database->Response->Browser.
+	    This is exactly what will happen when we build Spring Boot applications.    

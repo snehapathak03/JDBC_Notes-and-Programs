@@ -37,5 +37,41 @@ Chapter 3 – What is a Server?A Server is a computer that receives requests and
         		HTTP Response
 			        |
 		        Client
+Chapter 4 – What is an IP Address?Every device connected to the Internet has an IP Address.Example:192.168.1.1
+        	Think of it like your home address.Without an address,the delivery person cannot find your house.Similarly,	without an IP,
+            the Internet cannot find your computer.
+        	Types of IP
+    	IPv4(Internet protocol version 4):Example- 192.168.1.15 , 32-bit
+	     IPv6(Internet protocol version 6):Example- 2405:201:3000:1111:abcd:1234:5678 ,128-bit
+	    Used because IPv4 addresses are limited.
+    	[IPv4 original standard uses a 32-bit addresess format, which generated about 4.3 billion unique addresess.Because those addresess 
+        are now largely exhausted, new systems rely on IPv6.
+    	IPv6 modern standards uses a 128-bit address format,written in hexadecimal and separated by colons.This	provides a virtually limitless 
+        supply of addresses and includes built-in security feature.] 
+
+Chapter 5 – What is DNS(Domain name system)?Suppose Google asks you to remember:142.250.183.46(Impossible!)
+    	Instead we type ->www.google.com
+	    DNS converts www.google.com  into  142.250.183.46
+	    DNS = Internet Phone Book.
+
+Chapter 6 – URL
+    	URL means Uniform Resource Locator
+	    Example: https://www.amazon.in/mobile/iphone?color=black
+	    Let's break it.
+	    Protocol:https
+	    Domain:www.amazon.in
+	    Path:/mobile/iphone
+	    Query Parameter:color=black
+	    Complete URL:https://www.amazon.in/mobile/iphone?color=black
+	    URI vs URL
+	    URI:/student/10
+	    URL:https://college.com/student/10
+	    A URI (Uniform Resource Identifier) is a broad term for any character string that identifiers a resource, while a 
+	    URL (Uniforn Resource Locator)is a specifi type of URI that also tells you how to find or access that resource.
+	    Every URL is a URI.Not every URI is a URL.
+	    [URI: identifies a resource by name, location, or both. It acts as the overarching parent category for all web identifiers.
+	    URL: is a subset of URl.It explicitly states the network location and the protocol needs to retrive the resource.
+	    URN: A Uniform Resource Name is another rare type of URI. It names a resouce uniquesly like an ISBN book number but does 
+	    not tell you where it is located online.]                
 		 
 	

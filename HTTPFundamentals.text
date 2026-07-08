@@ -251,3 +251,46 @@ Chapter 10 – HTTP Request:A Request is sent by the Client.Contains:URL,Method,
 			"name":"Sneha"
 		}
 	]	
+Chapter 12 – HTTP Methods
+	GET:Retrieve data.Example:GET /students
+	POST:Insert new data.EX:POST /students
+	PUT:Update complete object.EX:PUT /students/5
+	PATCH:Update partial object.Ex:PATCH /students/5
+	DELETE:Delete object.Ex:DELETE /students/5
+	CRUD 	Mapping
+	CRUD	HTTP
+	Create	POST
+	Read	GET
+	Update	PUT/PATCH
+	Delete	DELETE
+	
+	Chapter 13 – HTTP Status Codes
+	1xx – Informational
+	Example:100 Continue
+	2xx – Success
+	Code	Meaning
+	200		OK
+	201		Created
+	204		No Content
+	3xx – Redirection
+	Code	Meaning
+	301		Moved Permanently
+	302		Found
+	304		Not Modified
+	4xx – Client Errors
+	Code	Meaning
+	400		Bad Request
+	401		Unauthorized
+	403		Forbidden
+	404		Not Found
+	405		Method Not Allowed
+	5xx – Server Errors
+	Code	Meaning
+	500		Internal Server Error
+	502		Bad Gateway
+	503		Service Unavailable
+	Easy Way to Remember
+	200:Everything OK
+	201:Created Successfully
+	404:Page Not Found
+	500:Server Crashed    

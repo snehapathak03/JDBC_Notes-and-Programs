@@ -15,3 +15,20 @@ Chapter 2 – Why APIs?Without APIs Application A CAN Directlt Access Database o
         	Problems:Security Risk,Tight Coupling,Difficult Maintenance.
         	With APIs Application A ->REST API ->Application B
         	Advantages:Secure,Fast,Scalable,Independent.
+
+Chapter 3 – What is REST?REST stands for Representational State Transfer.REST is an architectural style for	designing web services.
+            REST uses HTTP,URLs,JSON.REST Architecture:Client->HTTP Request->REST API->Business Logic->Database->HTTP Response.
+	
+Chapter 4 – REST Principles:There are 6 REST Constraints.
+    	1. Client-Server:Client and Server remain independent.Example:Browser->Spring Boot.
+	    2. Stateless:The server remembers nothing between requests.Example:Request 1 :GET /students, Request 2:GET /students/10
+	                 Each request is independent.
+    	3. Cacheable:Responses can be cached.Example:Google logo.Doesn't download every time.Browser caches it.
+    	4. Uniform Interface:Every REST API follows similar URL conventions.Example:GET /students,POST /students,PUT /students/5
+	    5. Layered System:Client doesn't know whether response came from Server,Cache OR Load Balancer.
+    	6. Code on Demand (Optional):Server may send executable code(JavaScript).
+
+Chapter 5 – REST API vs RESTful API
+	    REST:Architecture
+    	RESTful API:API following REST principles.
+    	Example:GET /students     is RESTful.            

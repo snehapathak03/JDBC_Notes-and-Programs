@@ -1,0 +1,17 @@
+Day 4 – REST APIs (Complete Beginner to Interview Level)
+	✅ Day 1 – Maven Basics
+	✅ Day 2 – Advanced Maven
+	✅ Day 3 – HTTP Fundamentals
+
+REST API (Representational State Transfer):Every Spring Boot application you build will expose REST APIs.
+
+Chapter 1 – What is an API?API stands for Application Programming Interface.Think of an API as a messenger between two applications.
+            Real-Life Example:Imagine you're in a restaurant.You → Customer,Waiter → API,Kitchen → Server,Food → Response.
+        	Customer -> Waiter(API) -> Kitchen(Server) -> Food(Response).You never enter the kitchen.
+            Similarly,Your application never directly accesses another application's database.It communicates through APIs.
+            Real World APIs:Examples:Google Maps API,Paytm Payment API,PhonePe API,Razorpay API,Weather API,GitHub API,OpenWeather API.
+
+Chapter 2 – Why APIs?Without APIs Application A CAN Directlt Access Database of Application B.
+        	Problems:Security Risk,Tight Coupling,Difficult Maintenance.
+        	With APIs Application A ->REST API ->Application B
+        	Advantages:Secure,Fast,Scalable,Independent.

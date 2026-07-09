@@ -55,4 +55,45 @@ Chapter 8 – CRUD Operations: CRUD means Create,Read, Update,Delete
     	    Example:Create Student:POST /students
 	        Read Student:GET /students/5
     	    Update Student:PUT /students/5
-	        Delete Student:DELETE /students/5            
+	        Delete Student:DELETE /students/5
+
+Chapter 9 – JSON:JSON means JavaScript Object Notation.It is the most common data format used by REST APIs.
+	        Student Object
+        	{
+		        "id":1,
+        		"name":"Sneha",
+		        "city":"Nagpur"
+        	}
+        	Multiple Students
+	        [
+		        {
+			        "id":1,
+			        "name":"Sneha"
+		        },
+		        {
+			        "id":2,
+			        "name":"Rahul"
+		        }
+	        ]
+        	JSON Rules
+	        1)Keys in double quotes
+	        2)Values can be String,Number,Boolean,Array,Object,null.
+	
+Chapter 10 – Request Body:Client sends data.Example:POST /students
+	        Body
+	        {
+		        "name":"Sneha",
+		        "city":"Nagpur"
+	        }
+	
+Chapter 11 – Response Body
+	        Server returns
+	        {
+		        "id":1,
+		        "name":"Sneha",
+		        "city":"Nagpur"
+	        }
+	
+Chapter 12 – Path Variable
+	        Example:GET /students/10.  10 is Path Variable.
+	        Spring Boot:@GetMapping("/students/{id}")            

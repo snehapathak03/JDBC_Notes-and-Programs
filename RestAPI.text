@@ -31,4 +31,28 @@ Chapter 4 – REST Principles:There are 6 REST Constraints.
 Chapter 5 – REST API vs RESTful API
 	    REST:Architecture
     	RESTful API:API following REST principles.
-    	Example:GET /students     is RESTful.            
+    	Example:GET /students     is RESTful.
+
+Chapter 6 – Resource:Everything is treated as a Resource.Examples:Student,Employee,Book,Customer,Bank Account.
+    	Resource Example:
+	    Student
+    	{
+	    "id":1,
+	    "name":"Sneha",
+	    "city":"Nagpur"
+    	}
+	    Student is the Resource.
+
+Chapter 7 – Endpoint:Endpoint means A URL where a Resource is available.Examples:/students,/employees,/customers.
+        	Complete URL: http://localhost:8080/students
+	
+Chapter 8 – CRUD Operations: CRUD means Create,Read, Update,Delete
+	        CRUD	HTTP Method
+    	    Create	POST
+	        Read	GET
+    	    Update	PUT
+	        Delete	DELETE
+    	    Example:Create Student:POST /students
+	        Read Student:GET /students/5
+    	    Update Student:PUT /students/5
+	        Delete Student:DELETE /students/5            

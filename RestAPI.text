@@ -96,4 +96,26 @@ Chapter 11 – Response Body
 	
 Chapter 12 – Path Variable
 	        Example:GET /students/10.  10 is Path Variable.
-	        Spring Boot:@GetMapping("/students/{id}")            
+	        Spring Boot:@GetMapping("/students/{id}")  
+
+Chapter 13 – Query Parameter
+        	Example:GET /students?city=Nagpur
+        	Query Parameter:city=Nagpur
+	        More Examples:GET /students?page=1, GET /students?sort=name, GET /students?city=Nagpur&age=22
+	        Path Variable vs Query Parameter
+	        Path Variable			Query Parameter
+	        Mandatory				Optional
+	        Identifies resource		Filters/Search
+	        /students/5				/students?city=Nagpur
+	
+Chapter 14 – REST API Design
+	        Good API:GET /students
+	        Bad API:GET /getStudentList
+	        Good:POST /students
+	        Bad:POST /createStudent
+	        Good:DELETE /students/5
+	        Bad:DELETE /deleteStudent
+	        [REST prefers nouns, not verbs.]
+
+Chapter 15 – REST API Flow:
+	        Browser->HTTP Request->Controller->Service->Repository->DatabasE->Repository->Service->Controller->HTTP Response.

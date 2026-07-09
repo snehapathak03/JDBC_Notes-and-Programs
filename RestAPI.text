@@ -80,42 +80,76 @@ Chapter 9 – JSON:JSON means JavaScript Object Notation.It is the most common d
 	        2)Values can be String,Number,Boolean,Array,Object,null.
 	
 Chapter 10 – Request Body:Client sends data.Example:POST /students
-	        Body
-	        {
-		        "name":"Sneha",
-		        "city":"Nagpur"
-	        }
+	         Body
+	         {
+		         "name":"Sneha",
+		         "city":"Nagpur"
+	         }
 	
 Chapter 11 – Response Body
-	        Server returns
-	        {
-		        "id":1,
-		        "name":"Sneha",
-		        "city":"Nagpur"
-	        }
+	         Server returns
+	         {
+		         "id":1,
+		         "name":"Sneha",
+		         "city":"Nagpur"
+	         }
 	
 Chapter 12 – Path Variable
-	        Example:GET /students/10.  10 is Path Variable.
-	        Spring Boot:@GetMapping("/students/{id}")  
+	         Example:GET /students/10.  10 is Path Variable.
+	         Spring Boot:@GetMapping("/students/{id}")  
 
 Chapter 13 – Query Parameter
-        	Example:GET /students?city=Nagpur
-        	Query Parameter:city=Nagpur
-	        More Examples:GET /students?page=1, GET /students?sort=name, GET /students?city=Nagpur&age=22
-	        Path Variable vs Query Parameter
-	        Path Variable			Query Parameter
-	        Mandatory				Optional
-	        Identifies resource		Filters/Search
-	        /students/5				/students?city=Nagpur
+        	 Example:GET /students?city=Nagpur
+        	 Query Parameter:city=Nagpur
+	         More Examples:GET /students?page=1, GET /students?sort=name, GET /students?city=Nagpur&age=22
+	         Path Variable vs Query Parameter
+	         Path Variable			Query Parameter
+	         Mandatory				Optional
+	         Identifies resource		Filters/Search
+	         /students/5				/students?city=Nagpur
 	
 Chapter 14 – REST API Design
-	        Good API:GET /students
-	        Bad API:GET /getStudentList
-	        Good:POST /students
-	        Bad:POST /createStudent
-	        Good:DELETE /students/5
-	        Bad:DELETE /deleteStudent
-	        [REST prefers nouns, not verbs.]
+	         Good API:GET /students
+	         Bad API:GET /getStudentList
+	         Good:POST /students
+	         Bad:POST /createStudent
+	         Good:DELETE /students/5
+	         Bad:DELETE /deleteStudent
+	         [REST prefers nouns, not verbs.]
 
 Chapter 15 – REST API Flow:
-	        Browser->HTTP Request->Controller->Service->Repository->DatabasE->Repository->Service->Controller->HTTP Response.
+	         Browser->HTTP Request->Controller->Service->Repository->DatabasE->Repository->Service->Controller->HTTP Response.
+
+Chapter 16 – Real API Example
+	         Request:GET /students
+	         Response
+	         [
+	         	{
+	         		"id":1,
+	         		"name":"Sneha"
+	         	},
+	         	{
+	         		"id":2,
+	         		"name":"Rahul"
+	         	}
+	         ]
+	         Request:GET /students/1
+	         Response:
+	         {
+	         	"id":1,
+	         	"name":"Sneha"
+	         }
+	         Request:POST /students
+	         Request Body
+	         {
+	         "name":"Amit"
+	         }
+	         Response:
+	         {
+	         "id":5,
+	         "name":"Amit"
+	         }
+	
+Chapter 17 – API Documentation:Developers document APIs so others know how to use them.Documentation usually includes:URL,
+	         Method,Headers,Request Body,Response Body,Status Codes.Later, you'll use Swagger/OpenAPI to generate API 
+	         documentation automatically in Spring Boot.

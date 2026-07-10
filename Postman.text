@@ -173,4 +173,33 @@ Chapter 14 – Variables
             http://localhost:8080
             Now use
             {{base_url}}/students
-            If the server URL changes, update the variable once.                                
+            If the server URL changes, update the variable once.   
+
+Chapter 15 – Environments:Suppose your application runs in:Development
+            localhost
+            Testing
+            192.168.1.5
+            Production
+            company.com
+            Instead of changing every request,switch environments.
+
+Chapter 16 – Authorization:Many APIs require authentication.
+            Common Types:No Auth-Public APIs.Basic Auth-Username,Password,Bearer Token (Most Common),Header,Authorization,Bearer eyJhbGc...
+            JWT Authentication uses Bearer Tokens.
+            API Key
+            Example:
+            x-api-key
+            123456789
+
+Chapter 17 – Import & Export
+            Import:OpenAPI,Swagger,Collections,JSON files
+            Export:Useful for sharing APIs with teammates.
+
+Chapter 18 – Response Analysis:Every response contains
+            Status
+            200 OK
+            Time
+            45 ms
+            Size
+            2 KB
+            Body:JSON Data,Headers,Server Information                                         

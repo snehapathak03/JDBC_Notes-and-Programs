@@ -88,4 +88,22 @@ Chapter 7 – PUT Request:Update an entire resource.
             "title":"Updated",
             "body":"Updated Body",
             "userId":1
-            }            
+            } 
+Chapter 8 – PATCH Request:Update only one field.
+            Method:PATCH
+            Body:
+            {
+            "title":"New Title"
+            }
+Chapter 9 – DELETE Request
+            Method:DELETE
+            URL:https://jsonplaceholder.typicode.com/posts/1
+            Click Send.
+            You'll receive a success response (the demo API simulates deletion).
+
+Chapter 10 – Query Parameters
+            Example:GET /users?id=1
+            Instead of writing:?id=1
+            Use Params Key
+            id Value 1
+            Postman automatically creates:?id=1                       

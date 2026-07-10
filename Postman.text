@@ -42,6 +42,7 @@ Chapter 3 – Postman Interface:When you open Postman, you'll see:+ New Tab,Meth
             Headers
             Body
             ---------------------------------------------------        
+
 Chapter 4 – HTTP Methods in Postman:Postman supports every HTTP method.
             Method		Purpose
             GET			Fetch Data
@@ -49,6 +50,7 @@ Chapter 4 – HTTP Methods in Postman:Postman supports every HTTP method.
             PUT			Update Entire Object
             PATCH		Partial Update
             DELETE		Delete Data
+
 Chapter 5 – Sending GET Request
             Example:GET
             URL:https://jsonplaceholder.typicode.com/users
@@ -79,6 +81,7 @@ Chapter 6 – Sending POST Request
             "id":101,
             "title":"Spring Boot"
             }
+
 Chapter 7 – PUT Request:Update an entire resource.
             URL:https://jsonplaceholder.typicode.com/posts/1
             Method:PUT
@@ -89,12 +92,14 @@ Chapter 7 – PUT Request:Update an entire resource.
             "body":"Updated Body",
             "userId":1
             } 
+
 Chapter 8 – PATCH Request:Update only one field.
             Method:PATCH
             Body:
             {
             "title":"New Title"
             }
+
 Chapter 9 – DELETE Request
             Method:DELETE
             URL:https://jsonplaceholder.typicode.com/posts/1
@@ -106,4 +111,66 @@ Chapter 10 – Query Parameters
             Instead of writing:?id=1
             Use Params Key
             id Value 1
-            Postman automatically creates:?id=1                       
+            Postman automatically creates:?id=1   
+
+Chapter 11 – Headers:Headers send additional information.
+            Example:Content-Type:application/json
+            Another
+            Accept:application/json
+            Common Headers
+            Header			Purpose
+            Content-Type	Format of Request
+            Accept			Expected Response
+            Authorization	Authentication
+            User-Agent		Client Information
+
+Chapter 12 – Body Types
+            Postman supports
+            none
+            form-data
+            x-www-form-urlencoded
+            raw
+            binary
+            For Spring Boot,you'll mostly use
+            raw->JSON
+
+Chapter 13 – Collections
+            Collections organize related API requests.
+            Example
+            Student API
+            ↓
+            GET Students
+            ↓
+            POST Student
+            ↓
+            PUT Student
+            ↓
+            DELETE Student
+            For your Banking project, create:
+            Banking System
+            ↓
+            Login
+            ↓
+            Register
+            ↓
+            Deposit
+            ↓
+            Withdraw
+            ↓
+            Transfer
+            ↓
+            Balance
+            ↓
+            Transaction History
+
+Chapter 14 – Variables
+            Instead of repeatedly typing:
+            http://localhost:8080
+            Create a variable.
+            Example
+            base_url
+            ↓
+            http://localhost:8080
+            Now use
+            {{base_url}}/students
+            If the server URL changes, update the variable once.                                

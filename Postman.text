@@ -42,3 +42,21 @@ Chapter 3 – Postman Interface:When you open Postman, you'll see:+ New Tab,Meth
             Headers
             Body
             ---------------------------------------------------        
+Chapter 4 – HTTP Methods in Postman:Postman supports every HTTP method.
+            Method		Purpose
+            GET			Fetch Data
+            POST		Insert Data
+            PUT			Update Entire Object
+            PATCH		Partial Update
+            DELETE		Delete Data
+Chapter 5 – Sending GET Request
+            Example:GET
+            URL:https://jsonplaceholder.typicode.com/users
+            Click Send
+            Response
+            [
+             {
+               "id":1,
+               "name":"Leanne Graham"
+             }
+            ]            

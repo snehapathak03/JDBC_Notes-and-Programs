@@ -4,3 +4,41 @@ Day 5 – Postman Masterclass
         ✅ Day 2 – Advanced Maven
         ✅ Day 3 – HTTP Fundamentals
         ✅ Day 4 – REST APIs
+Chapter 1 – What is Postman?Postman is an API Testing Tool.It allows developers to:Send HTTP Requests,Receive HTTP Responses,
+            Test REST APIs,Debug APIs,Document APIs
+            Without Postman:Suppose you create this API:GET /students
+            How will you test it?
+            Options:Browser,Java Code,Mobile App(Not convenient.)
+            With Postman:Simply:
+            POSTMAN
+            ↓
+            GET
+            ↓
+            localhost:8080/students
+            ↓
+            Send
+            ↓
+            Response
+            Real World Example:Imagine you're building a Banking API.Before giving it to the frontend developer,you first test every 
+            API using Postman.
+
+Chapter 2 – Installing Postman:Download from the official website:Postman Download
+            Install normally.You can use it without signing in, but creating a free account helps you sync collections.
+
+Chapter 3 – Postman Interface:When you open Postman, you'll see:+ New Tab,Method Dropdown,URL Box,Headers,Body,
+            Authorization,Send Button,Response Area,Interface Diagram
+            ---------------------------------------------------
+            GET ▼
+            http://localhost:8080/students
+            [ Send ]
+            ---------------------------------------------------
+            Params
+            Authorization
+            Headers
+            Body
+            ---------------------------------------------------
+            Response
+            Status
+            Headers
+            Body
+            ---------------------------------------------------        

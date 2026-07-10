@@ -60,3 +60,32 @@ Chapter 5 – Sending GET Request
                "name":"Leanne Graham"
              }
             ]            
+
+Chapter 6 – Sending POST Request
+            Method:POST
+            URL:https://jsonplaceholder.typicode.com/posts
+            Select
+            Body->raw->JSON
+
+            Body
+            {
+                "title":"Spring Boot",
+                "body":"Learning REST API",
+                "userId":1
+            }
+            Click Send
+            Response
+            {
+            "id":101,
+            "title":"Spring Boot"
+            }
+Chapter 7 – PUT Request:Update an entire resource.
+            URL:https://jsonplaceholder.typicode.com/posts/1
+            Method:PUT
+            Body
+            {
+            "id":1,
+            "title":"Updated",
+            "body":"Updated Body",
+            "userId":1
+            }            

@@ -99,6 +99,11 @@ Part 9: Maven Coordinates:Every Maven project has four important identifiers:
 
 Part 10:Maven Lifecycle:The most common lifecycle phases are:validate ->	compile -> test -> package -> verify -> install -> deploy
 
+Practical 1: Check Maven Installation:
+			 Open Command Prompt and run:mvn -version
+			 Expected output:Apache Maven 3.x.x ,Java version: 21, OS: Windows
+			 If you get:'mvn' is not recognized...	don't worry—we'll configure Maven.
+
 Day 2: Advanced Maven
 
 Part 1: What Happens When You Click "Run"?Imagine your project contains:

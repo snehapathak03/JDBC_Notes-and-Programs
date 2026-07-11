@@ -103,6 +103,25 @@ Practical 1: Check Maven Installation:
 			 Open Command Prompt and run:mvn -version
 			 Expected output:Apache Maven 3.x.x ,Java version: 21, OS: Windows
 			 If you get:'mvn' is not recognized...	don't worry—we'll configure Maven.
+Practical 2: Create a Maven Project in Eclipse
+			 File → New → Maven Project
+			 Click Next
+			 Select:Create a simple project   than Click Next
+			 Fill in:Group Id:com.sneha
+			 Artifact Id:MavenDemo
+			 Version:1.0
+			 Packaging:jar   then Click Finish
+	
+Practical 3: Add a Dependency
+			 Open pom.xml and add:
+			 <dependencies>
+			 	<dependency>
+			 		<groupId>com.mysql</groupId>
+			 		<artifactId>mysql-connector-j</artifactId>
+			 		<version>9.4.0</version>
+			 	</dependency>
+			 </dependencies>
+			 Save the file.[Maven will automatically download the MySQL Connector if your internet connection is active.]			 
 
 Day 2: Advanced Maven
 

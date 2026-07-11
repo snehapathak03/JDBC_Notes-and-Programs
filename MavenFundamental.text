@@ -148,6 +148,18 @@ The contractor is Maven.
 		<artifactId>banking-system</artifactId>
 		<version>1.0</version>
 	</project>
+
+5]What are Maven repositories?There are 3 repositories.Local, Central, and Remote repository. where 
+Local Repository stores in your computer.It you have window then the location will be C:/user/<usermane>/.me/repository. Once maven  
+downloads a dependency, It is stored here.Central Repository is the official online repository maintained by maven.Whenever a dependency isn't 
+available locally, Maven downloads it from the Central Repository. And the third one is the Remote repository , Some companies maintain their own 
+private repositories containing internal libraries.
+
+6]What is the difference between Local and Central Repository?In local repository the repo is store in your own computer where as central Repository 
+is the official online repository maintained by maven.
+
+7]What is the Maven lifecycle?	The most common lifecycle phases are:validate ->compile -> test -> package -> verify -> install -> deploy.
+
 Day 2: Advanced Maven
 
 Part 1: What Happens When You Click "Run"?Imagine your project contains:

@@ -121,7 +121,20 @@ Practical 3: Add a Dependency
 			 		<version>9.4.0</version>
 			 	</dependency>
 			 </dependencies>
-			 Save the file.[Maven will automatically download the MySQL Connector if your internet connection is active.]			 
+			 Save the file.[Maven will automatically download the MySQL Connector if your internet connection is active.]	
+
+INTERVIEW QUESTIONS:
+1]What is Maven?A Maven is a Built Automation and Dependencies Management Tool for java project.It helps developers to built applications, Download librariesautomatically,
+manage project dependencies, package application,run Tests and Maintain consistent project structure.Think of Maven as your project manager.
+
+2]Why Maven is used? used to automate the build process and manage project dependencies in Java-based applications.Imagine you're writing a 
+JDBC project.To connect Java with MySQL.You need:mysql-connector-j.jar .Without Maven you would:Download the JAR manually.
+Copy it into your project.Add it to the build path.Repeat this for every new project.Update it manually when a new version is released.
+Now imagine your project needs:MySQL,JUnit,Lombok,Jackson,Spring Boot,Hibernate,Log4j,Mockito.You would end up downloading dozens of JAR 
+files manually.That's why Maven exists.
+Real-World Analogy: Imagine you're building a house.Without Maven:You go to different stores yourself and buy every brick,pipe, wire, window, 
+and screw.With Maven:You give the contractor a list of required materials, and they automatically bring everything you need.
+The contractor is Maven.
 
 Day 2: Advanced Maven
 

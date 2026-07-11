@@ -136,6 +136,18 @@ Real-World Analogy: Imagine you're building a house.Without Maven:You go to diff
 and screw.With Maven:You give the contractor a list of required materials, and they automatically bring everything you need.
 The contractor is Maven.
 
+3]What is a dependency?A dependency is an external library that your project used.Example:
+ MySQL Connector library use to connect java to MySQL,Junit library for Testing, Lombok for reducing boilerplate code, 
+ SpringBoot for built Backend application, and Hibernate for Object Relational Mappling. 
+
+ 4]What is pom.xml? POM stands for Project Object Model.It contains information about:Project name,Version,Dependencies,Plugins,Java version 
+ and Build settings.Example:
+	<project>
+		<modelVersion>4.0.0</modelVersion>
+		<groupId>com.sneha</groupId>
+		<artifactId>banking-system</artifactId>
+		<version>1.0</version>
+	</project>
 Day 2: Advanced Maven
 
 Part 1: What Happens When You Click "Run"?Imagine your project contains:

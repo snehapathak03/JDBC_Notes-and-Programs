@@ -335,3 +335,7 @@ Part 8: Snapshot vs Release
 	Release -> Stable version -> 1.0 -> Ready for production.
 Part 9: Transitive Dependency:Suppose your project depends on:Spring Boot.Spring Boot depends on:Jackson.Jackson depends on:SLF4J.
 		You only add:Spring Boot.Maven automatically downloads Jackson and SLF4J too.This is called a Transitive Dependency.
+
+Practical 1: Build Your Project
+		     In Eclipse:Right-click the project.Run As → Maven build,In Goals, type:clean package,Click Run.Observe:target folder is created.
+			 .jar file appears inside it.

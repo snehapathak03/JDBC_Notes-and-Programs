@@ -160,6 +160,10 @@ is the official online repository maintained by maven.
 
 7]What is the Maven lifecycle?	The most common lifecycle phases are:validate ->compile -> test -> package -> verify -> install -> deploy.
 
+8]What is groupId?Think of groupId as your organization, company, or package name.It identifies who created the project.
+For example:com.google  means the project belongs to Google.'org.springframework':means the project belongs to the Spring Framework team.
+For your own projects, you can use:com.snehapathak or com.sneha or com.banking.
+
 Day 2: Advanced Maven
 
 Part 1: What Happens When You Click "Run"?Imagine your project contains:

@@ -339,3 +339,7 @@ Part 9: Transitive Dependency:Suppose your project depends on:Spring Boot.Spring
 Practical 1: Build Your Project
 		     In Eclipse:Right-click the project.Run As → Maven build,In Goals, type:clean package,Click Run.Observe:target folder is created.
 			 .jar file appears inside it.
+
+Practical 2: Convert Your JDBC Project to Maven.
+			 Create a new Maven project.Copy the src folder from your JDBC project.Add the MySQL Connector dependency to pom.xml.
+			 Remove manually added JARs.Run the project.Now Maven manages the dependency.

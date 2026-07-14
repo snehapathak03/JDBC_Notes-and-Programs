@@ -343,3 +343,21 @@ Practical 1: Build Your Project
 Practical 2: Convert Your JDBC Project to Maven.
 			 Create a new Maven project.Copy the src folder from your JDBC project.Add the MySQL Connector dependency to pom.xml.
 			 Remove manually added JARs.Run the project.Now Maven manages the dependency.
+Real-World Workflow ->
+	A developer changes code:
+		↓
+	git pull
+		↓
+	Code Changes
+		↓
+	mvn clean install
+		↓
+	Run Tests
+		↓
+	Git Commit
+		↓
+	Git Push
+		↓
+	CI/CD Pipeline
+		↓
+	Deploy			 

@@ -193,7 +193,6 @@ banking-management-system
 │   │   └── resources
 │   └── test
 ├── pom.xml
-
 Notice:
 Project folder = artifactId
 Java package = groupId
@@ -203,6 +202,30 @@ groupId    : com.snehapathak
 artifactId : banking-management-system
 version    : 1.0.0
 Together, they form:com.snehapathak:banking-management-system:1.0.0. This uniquely identifies your project.
+
+10] Standard Maven Project Structure
+			Banking-System
+			│
+			├── src
+			│   ├── main
+			│   │   ├── java
+			│   │   └── resources
+			│   │
+			│   └── test
+			│       └── java
+			│
+			├── target
+			│
+			├── pom.xml
+			│
+			└── README.md
+	Folder Purpose
+	Folder				Purpose
+	src/main/java		Application source code
+	src/main/resources	Configuration files
+	src/test/java		Unit tests
+	target				Compiled output
+	pom.xml				Maven configuration
 
 Day 2: Advanced Maven
 

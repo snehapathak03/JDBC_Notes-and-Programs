@@ -164,6 +164,46 @@ is the official online repository maintained by maven.
 For example:com.google  means the project belongs to Google.'org.springframework':means the project belongs to the Spring Framework team.
 For your own projects, you can use:com.snehapathak or com.sneha or com.banking.
 
+9]What is artifactId?artifactId is the name of your project.Examples:If your project is:Banking Management System or Student Management System or
+Portfolio Website Backend. their artifactId could be:banking-management-system or student-management-system or portfolio-backend.
+Example:Suppose you're building a Banking Management System.Your Maven project details could be:
+groupId    : com.snehapathak
+artifactId : banking-management-system
+This means:The project belongs to com.snehapathak.The project name is banking-management-system.
+Package Structure:When Maven creates the project, it automatically creates a package using the groupId.
+If your groupId is:com.snehapathak then your Java package becomes:
+src
+└── main
+    └── java
+        └── com
+            └── snehapathak
+Inside this package, you'll write your Java classes.
+Project Folder
+Suppose:
+groupId    : com.snehapathak
+artifactId : banking-management-system
+The project will look like:
+banking-management-system
+│
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── com
+│   │   │       └── snehapathak
+│   │   └── resources
+│   └── test
+├── pom.xml
+
+Notice:
+Project folder = artifactId
+Java package = groupId
+How Maven Identifies a Project?Maven uniquely identifies every project using:groupId + artifactId + version
+For example:
+groupId    : com.snehapathak
+artifactId : banking-management-system
+version    : 1.0.0
+Together, they form:com.snehapathak:banking-management-system:1.0.0. This uniquely identifies your project.
+
 Day 2: Advanced Maven
 
 Part 1: What Happens When You Click "Run"?Imagine your project contains:

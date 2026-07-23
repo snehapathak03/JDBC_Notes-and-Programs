@@ -313,3 +313,8 @@ Chapter 16 – Session:Session is stored on the Server.Cookie stores only the Se
 	
 Chapter 17 – Complete HTTP Flow:User->Chrome->DNS->Server IP->HTTP Request->Spring Boot->Business Logic->Database->Response->Browser.
 	    This is exactly what will happen when we build Spring Boot applications.    
+
+	EXTRA:HTTP is an application layer protocol in the OSI and TCP/IP models.It defines:How requests are sent,How servers 
+	respond,How data is transferred.Example:Browser --------HTTP Request-------> Server,Browser <-------HTTP Response------- Server
+	When you visit:https://www.google.com .Your browser sends an HTTP request.Google sends back an HTTP response containing 
+	HTML, CSS, JavaScript, images, etc.

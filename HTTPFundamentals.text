@@ -318,3 +318,10 @@ Chapter 17 – Complete HTTP Flow:User->Chrome->DNS->Server IP->HTTP Request->Sp
 	respond,How data is transferred.Example:Browser --------HTTP Request-------> Server,Browser <-------HTTP Response------- Server
 	When you visit:https://www.google.com .Your browser sends an HTTP request.Google sends back an HTTP response containing 
 	HTML, CSS, JavaScript, images, etc.
+
+HTTP= HyperText Transfer Protocol.Let's understand each word.
+	  	Hyper:Anything linked together.Example:A webpage contains links to other webpages.
+	  	Text:Originally HTTP transferred only text.Nowadays it transfers Images,Videos,PDFs,JSON,XML,Audio,Files .
+	  	Transfer:Sending data between client and server.
+	  	Protocol:A set of rules.Example:When two people speak English,Both understand each other.Similarly,Browser and server 
+	  	both understand HTTP.

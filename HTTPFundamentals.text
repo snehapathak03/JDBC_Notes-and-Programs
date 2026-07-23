@@ -327,4 +327,9 @@ HTTP= HyperText Transfer Protocol.Let's understand each word.
 	  	both understand HTTP.
 Why HTTP Was Created?Before HTTP,Computers could communicate,But there was no standard way for browsers and web 
 		servers to exchange webpages.Tim Berners-Lee created HTTP in 1989 while inventing the World Wide Web.
-		Purpose was to To transfer webpages across computers.		
+		Purpose was to To transfer webpages across computers.	
+Client and Server:
+	Client:A client requests information.Examples:Chrome,Firefox,Edge,Mobile App,Postman.
+	Server:A server provides information.Examples:Amazon Server,Google Server,Netflix Server,College Website Server
+
+	Communication:Client --------Request-------->,Server <-------Response--------			

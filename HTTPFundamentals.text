@@ -380,3 +380,9 @@ HTTP Architecture
 	HTTP Response
         |
 	Browser
+
+Request and Response Cycle:Everything in HTTP works in Request → Response.Example:
+Client:Please give homepage.
+			↓
+		Server:Here is homepage.
+No response happens without a request.

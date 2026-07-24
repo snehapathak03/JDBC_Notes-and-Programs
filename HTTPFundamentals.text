@@ -340,3 +340,22 @@ HTTP Communication Process:Suppose you open:https://amazon.in
 	Step 3:Server processes request.
 	Step 4:Server sends response.
 	Step 5:Browser renders webpage.
+
+Complete Flow:
+			Browser
+			↓
+			HTTP Request
+			↓
+			Internet
+			↓
+			Server
+			↓
+			Database
+			↓
+			Server
+			↓
+			HTTP Response
+			↓
+			Browser
+			↓
+			User sees webpage

@@ -332,4 +332,11 @@ Client and Server:
 	Client:A client requests information.Examples:Chrome,Firefox,Edge,Mobile App,Postman.
 	Server:A server provides information.Examples:Amazon Server,Google Server,Netflix Server,College Website Server
 
-	Communication:Client --------Request-------->,Server <-------Response--------			
+	Communication:Client --------Request-------->,Server <-------Response--------		
+
+HTTP Communication Process:Suppose you open:https://amazon.in
+	Step 1:Browser sends GET /
+	Step 2:Server receives request.
+	Step 3:Server processes request.
+	Step 4:Server sends response.
+	Step 5:Browser renders webpage.

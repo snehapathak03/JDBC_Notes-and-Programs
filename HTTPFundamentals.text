@@ -386,3 +386,11 @@ Client:Please give homepage.
 			↓
 		Server:Here is homepage.
 No response happens without a request.
+
+Stateless Protocol:This is one of the most important interview questions.HTTP is Stateless.
+	Meaning:The server does NOT remember previous requests.
+	Example:
+	Request 1:Login.Server responds.Later
+
+	Request 2:View Profile.Server doesn't automatically know you're logged in.
+	To remember users,Applications use:Cookies,Sessions,JWT Tokens

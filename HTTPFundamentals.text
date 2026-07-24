@@ -359,3 +359,24 @@ Complete Flow:
 			Browser
 			↓
 			User sees webpage
+
+HTTP Architecture
++---------------------+
+| Browser             |
++---------------------+
+        |
+	HTTP Request
+        |
+	Internet
+        |
++----------------------+
+| Web Server           |
++----------------------+
+        |
+	Business Logic
+        |
+	Database
+        |
+	HTTP Response
+        |
+	Browser

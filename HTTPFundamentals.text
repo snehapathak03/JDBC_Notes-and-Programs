@@ -401,3 +401,13 @@ HTTP Versions:
 	3.HTTP/1.1:Most widely used.Features:Persistent Connections,Caching,Virtual Hosting,Chunked Transfer
 	4.HTTP/2:Major improvements,Binary Protocol,Multiplexing,Header Compression,Faster Loading
 	5.HTTP/3:Uses QUIC instead of TCP.Benefits:Faster,Lower Latency,Better Performance on Mobile Networks
+
+HTTP Message Structure:
+	HTTP Request:GET /students HTTP/1.1, Host: localhost:8080, User-Agent: Chrome, Accept: application/json
+	Components:Request Line,Headers,Empty Line,Body (optional)
+	HTTP Response:HTTP/1.1 200 OK, Content-Type: application/json, Content-Length: 50
+		{
+		"id":1,
+		"name":"Sneha"
+		}
+	Components:Status Line,Headers,Empty Line,Body	

@@ -411,3 +411,14 @@ HTTP Message Structure:
 		"name":"Sneha"
 		}
 	Components:Status Line,Headers,Empty Line,Body	
+
+Request Methods (HTTP Verbs)
+	Method		Purpose							Example
+	GET			Retrieve data					Get all students
+	POST		Create new data					Add student
+	PUT			Replace existing data			Update full student
+	PATCH		Update part of data				Update only email
+	DELETE		Delete data						Remove student
+	HEAD		Get headers only				Check resource metadata
+	OPTIONS		Discover supported methods		Used in CORS preflight
+	Examples:GET /students,POST /students,PUT /students/1,PATCH /students/1,DELETE /students/1	

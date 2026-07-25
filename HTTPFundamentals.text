@@ -421,4 +421,10 @@ Request Methods (HTTP Verbs)
 	DELETE		Delete data						Remove student
 	HEAD		Get headers only				Check resource metadata
 	OPTIONS		Discover supported methods		Used in CORS preflight
-	Examples:GET /students,POST /students,PUT /students/1,PATCH /students/1,DELETE /students/1	
+	Examples:GET /students,POST /students,PUT /students/1,PATCH /students/1,DELETE /students/1
+
+HTTP Headers:Headers provide additional information.Examples:Host: localhost,Content-Type: application/json,
+	Accept: application/json,Authorization: Bearer <token>,Content-Length: 250
+	
+	Common Request Headers:Host,User-Agent,Accept,Authorization,Cookie,Content-Type
+	Common Response Headers:Content-Type,Content-Length,Set-Cookie,Cache-Control,Server,Date		

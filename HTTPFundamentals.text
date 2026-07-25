@@ -394,3 +394,10 @@ Stateless Protocol:This is one of the most important interview questions.HTTP is
 
 	Request 2:View Profile.Server doesn't automatically know you're logged in.
 	To remember users,Applications use:Cookies,Sessions,JWT Tokens
+
+HTTP Versions:
+	1.HTTP/0.9:Only GET,Very simple,Text only
+	2.HTTP/1.0:Added:Headers,Status Codes,Multiple content types
+	3.HTTP/1.1:Most widely used.Features:Persistent Connections,Caching,Virtual Hosting,Chunked Transfer
+	4.HTTP/2:Major improvements,Binary Protocol,Multiplexing,Header Compression,Faster Loading
+	5.HTTP/3:Uses QUIC instead of TCP.Benefits:Faster,Lower Latency,Better Performance on Mobile Networks

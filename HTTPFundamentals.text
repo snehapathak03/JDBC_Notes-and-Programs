@@ -433,4 +433,14 @@ Cookies, Sessions, and JWT:Because HTTP is stateless, applications use mechanism
 	Cookies:Small pieces of data stored in the browser.Automatically sent with future requests to the same domain.
 	Sessions:Session data is stored on the server.Browser stores only a session ID (usually in a cookie).
 	JWT (JSON Web Token):Encodes user identity and claims in a signed token.Commonly used in REST APIs and modern web applications.
+
+REST and HTTP:REST (Representational State Transfer) uses HTTP methods to perform CRUD operations.
+	CRUD-Operation		HTTP Method
+	Create				POST
+	Read				GET
+	Update(Full)		PUT
+	Update(Partial)		PATCH
+	Delete				DELETE
+	
+	Example API:GET    /students,POST   /students,GET    /students/1,PUT    /students/1,PATCH  /students/1,DELETE /students/1	
 			

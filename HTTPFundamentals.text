@@ -427,4 +427,10 @@ HTTP Headers:Headers provide additional information.Examples:Host: localhost,Con
 	Accept: application/json,Authorization: Bearer <token>,Content-Length: 250
 	
 	Common Request Headers:Host,User-Agent,Accept,Authorization,Cookie,Content-Type
-	Common Response Headers:Content-Type,Content-Length,Set-Cookie,Cache-Control,Server,Date		
+	Common Response Headers:Content-Type,Content-Length,Set-Cookie,Cache-Control,Server,Date	
+
+Cookies, Sessions, and JWT:Because HTTP is stateless, applications use mechanisms to maintain user state.
+	Cookies:Small pieces of data stored in the browser.Automatically sent with future requests to the same domain.
+	Sessions:Session data is stored on the server.Browser stores only a session ID (usually in a cookie).
+	JWT (JSON Web Token):Encodes user identity and claims in a signed token.Commonly used in REST APIs and modern web applications.
+			

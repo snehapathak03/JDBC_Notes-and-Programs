@@ -444,3 +444,13 @@ REST and HTTP:REST (Representational State Transfer) uses HTTP methods to perfor
 	
 	Example API:GET    /students,POST   /students,GET    /students/1,PUT    /students/1,PATCH  /students/1,DELETE /students/1	
 			
+MIME Types (Content Types):The Content-Type header tells the client what kind of data is being sent.Examples:
+	MIME Type					Description
+	text/html					HTML page
+	text/css					CSS file
+	application/javascript		JavaScript
+	application/json			JSON data
+	application/xml				XML
+	image/png					PNG image
+	image/jpeg					JPEG image
+	application/pdf				PDF document			

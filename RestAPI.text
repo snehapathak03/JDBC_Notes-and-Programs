@@ -178,4 +178,7 @@ REST APIs are the backbone of modern web and mobile applications.They enable dif
 		Browser			
 
 What is REST?REST stands for Representational State Transfer.It is an architectural style, not a programming 
-	language or protocol.It defines rules for designing web services that communicate over HTTP.		 
+	language or protocol.It defines rules for designing web services that communicate over HTTP.	
+
+History of REST:REST was introduced by Roy Fielding in 2000 as part of his Ph.D. dissertation.
+	Purpose:Create scalable, simple, and maintainable web services.

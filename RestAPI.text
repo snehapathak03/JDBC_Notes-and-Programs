@@ -191,3 +191,24 @@ REST vs API:Many students think REST and API are the same.They are NOT.API:Any c
 	├── SOAP API
 	├── GraphQL API
 	└── gRPC API	
+
+REST Architecture
+	+--------------------+
+	Browser / Mobile App
+	+--------------------+
+			|
+		HTTP Request
+			|
+	+--------------------+
+		REST API
+	+--------------------+
+			|
+		Business Logic
+			|
+	+--------------------+
+			Database
+	+--------------------+
+			|
+		HTTP Response
+			|
+		Browser	

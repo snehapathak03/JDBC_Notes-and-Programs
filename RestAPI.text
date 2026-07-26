@@ -153,3 +153,26 @@ Chapter 16 – Real API Example
 Chapter 17 – API Documentation:Developers document APIs so others know how to use them.Documentation usually includes:URL,
 	         Method,Headers,Request Body,Response Body,Status Codes.Later, you'll use Swagger/OpenAPI to generate API 
 	         documentation automatically in Spring Boot.
+
+REST APIs are the backbone of modern web and mobile applications.They enable different systems to communicate 
+		over HTTP using a standardized architecture.
+		
+		What is an API?API stands for Application Programming Interface.An API is a bridge that allows two 
+		software applications to communicate.Real-life Example:Imagine you're at a restaurant:
+		Customer → Client (Browser/Mobile App),Waiter → API,Kitchen → Server/Database.
+		Flow:
+		Customer → Waiter → Kitchen
+		Customer ← Waiter ← Food
+		The customer never enters the kitchen. The waiter handles communication.
+		Similarly,
+		Browser
+		↓
+		API
+		↓
+		Server
+		↓
+		Database
+		↓
+		API
+		↓
+		Browser			 

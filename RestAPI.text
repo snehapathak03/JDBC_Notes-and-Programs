@@ -182,3 +182,12 @@ What is REST?REST stands for Representational State Transfer.It is an architectu
 
 History of REST:REST was introduced by Roy Fielding in 2000 as part of his Ph.D. dissertation.
 	Purpose:Create scalable, simple, and maintainable web services.
+
+REST vs API:Many students think REST and API are the same.They are NOT.API:Any communication interface.
+	Examples:Java API,JDBC API,Windows API,REST API,SOAP API,REST API.A type of API that follows REST principles.
+	Think like this:
+	API
+	├── REST API
+	├── SOAP API
+	├── GraphQL API
+	└── gRPC API	

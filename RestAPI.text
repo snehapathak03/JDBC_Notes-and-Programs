@@ -263,3 +263,11 @@ REST Constraints:A REST API must satisfy six constraints.
 		Database
 		
 	VI. Code on Demand (Optional):Server can send executable code.Usually JavaScript.Not commonly used in REST APIs today.
+
+REST Principles:A good REST API should:
+	1.Be stateless.
+	2.Use HTTP methods correctly.
+	3.Return standard HTTP status codes.
+	4.Use meaningful URLs.
+	5.Return JSON (commonly)
+	6.Be cache-friendly where appropriate

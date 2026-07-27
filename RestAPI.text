@@ -230,3 +230,8 @@ REST Communication:Suppose you open Amazon
 What is a Resource?The most important concept in REST.Everything is a Resource.Examples:Student,Employee,Product,Book,Customer,Order.
 	Each resource has a URI.Examples:/students,/products,/books,/employees,/orders.
 	Resource=Object stored on the server.	
+
+URI vs URL vs URN:
+	URI:Uniform Resource Identifier.Identifies a resource.Example:/students/101
+	URL:Uniform Resource Locator.Tells where the resource exists.Example:https://college.com/students/101
+	URN:Uniform Resource Name.Only gives the name.Example:urn:isbn:9780134685991	

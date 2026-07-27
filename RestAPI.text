@@ -226,3 +226,7 @@ REST Communication:Suppose you open Amazon
 	JSON
 	 ↓
 	Browser
+
+What is a Resource?The most important concept in REST.Everything is a Resource.Examples:Student,Employee,Product,Book,Customer,Order.
+	Each resource has a URI.Examples:/students,/products,/books,/employees,/orders.
+	Resource=Object stored on the server.	

@@ -211,4 +211,18 @@ REST Architecture
 			|
 		HTTP Response
 			|
-		Browser	
+		Browser
+
+REST Communication:Suppose you open Amazon
+	Flow:
+	Browser
+	 ↓
+	GET /products
+	 ↓
+	REST API
+	 ↓
+	Database
+	 ↓
+	JSON
+	 ↓
+	Browser

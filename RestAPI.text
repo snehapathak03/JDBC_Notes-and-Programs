@@ -271,3 +271,40 @@ REST Principles:A good REST API should:
 	4.Use meaningful URLs.
 	5.Return JSON (commonly)
 	6.Be cache-friendly where appropriate
+
+HTTP Methods in REST:
+	1.GET:Retrieve data.Example:GET /students
+	Returns:
+		[
+		  {
+			"id":1,
+			"name":"Sneha"
+		  }
+		]
+	2.POST:Create new resource.POST /students
+	Body:
+	{
+	  "name":"Sneha"
+	}
+	Response:
+	{
+	  "id":1,
+	  "name":"Sneha"
+	}
+	Status:201 Created
+	3.PUT:Replace entire object.PUT /students/1
+	{
+	  "id":1,
+	  "name":"Sneha",
+	  "city":"Nagpur"
+	}
+	Entire object replaced.
+
+	4.PATCH:Update partial object.PATCH /students/1
+	{
+	  "city":"Pune"
+	}
+	Only city changes.
+
+	5.DELETE:Delete resource.DELETE /students/1
+	Response:204 No Content	

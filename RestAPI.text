@@ -333,3 +333,11 @@ Request Structure:
 		"name":"Sneha"
 	}
 	Contains:Request Line,Headers,Body	
+
+Response Structure:HTTP/1.1 200 OK
+	Content-Type: application/json
+	{
+		"id":1,
+		"name":"Sneha"
+	}
+	Contains:Status Line,Headers,Body	

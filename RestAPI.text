@@ -341,3 +341,10 @@ Response Structure:HTTP/1.1 200 OK
 		"name":"Sneha"
 	}
 	Contains:Status Line,Headers,Body	
+
+Path Parameter vs Query Parameter
+	Path Parameter:Used to identify a specific resource.GET /students/10.10 = Student ID
+	Query Parameter:Used for filtering, sorting, searching, or pagination.
+		GET /students?city=Nagpur
+		GET /products?category=Laptop
+		GET /students?page=2&size=10	

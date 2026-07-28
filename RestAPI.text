@@ -354,3 +354,22 @@ Request Headers Examples:
 		Content-Type: application/json
 		Accept: application/json
 		User-Agent: Chrome	
+
+JSON:REST APIs usually exchange data using JSON.
+	Student Object
+	{
+		"id":101,
+		"name":"Sneha",
+		"city":"Nagpur",
+		"course":"IT"
+	}
+
+	Array
+	[
+	  {
+		"id":1
+	  },
+	  {
+		"id":2
+	  }
+	]		

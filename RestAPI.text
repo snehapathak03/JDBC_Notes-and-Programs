@@ -348,3 +348,9 @@ Path Parameter vs Query Parameter
 		GET /students?city=Nagpur
 		GET /products?category=Laptop
 		GET /students?page=2&size=10	
+
+Request Headers Examples:
+		Authorization: Bearer token
+		Content-Type: application/json
+		Accept: application/json
+		User-Agent: Chrome	

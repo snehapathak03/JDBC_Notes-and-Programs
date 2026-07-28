@@ -308,3 +308,18 @@ HTTP Methods in REST:
 
 	5.DELETE:Delete resource.DELETE /students/1
 	Response:204 No Content	
+
+	REST Endpoint:Endpoint=Complete URL to access resource.Example:https://api.company.com/students/100
+	Breakdown:https://
+	Protocol
+	  ↓
+	api.company.com
+	
+	Host
+	 ↓
+	students
+	
+	Resource
+	 ↓
+	100
+	Resource ID	

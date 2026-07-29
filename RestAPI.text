@@ -392,3 +392,9 @@ Authentication in REST APIs
 	JWT (JSON Web Token):Most common for modern applications.
 	Sent in the Authorization header:Authorization: Bearer eyJhbGciOi...
 	OAuth 2.0:Used for third-party authorization (e.g., "Sign in with Google").	
+
+CORS (Cross-Origin Resource Sharing):Browsers block requests from one origin to another unless the server allows them.Example:
+	Frontend:http://localhost:3000
+	Backend:http://localhost:8080
+	Without CORS configuration, the browser blocks the request.
+	Spring Boot often uses @CrossOrigin or global CORS configuration.	

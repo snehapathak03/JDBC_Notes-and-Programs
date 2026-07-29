@@ -398,3 +398,22 @@ CORS (Cross-Origin Resource Sharing):Browsers block requests from one origin to 
 	Backend:http://localhost:8080
 	Without CORS configuration, the browser blocks the request.
 	Spring Boot often uses @CrossOrigin or global CORS configuration.	
+
+REST API Lifecycle in Spring Boot
+	Client
+	 ↓
+	Controller (@RestController)
+	 ↓
+	Service (@Service)
+	 ↓
+	Repository (@Repository)
+	 ↓
+	Database
+	 ↓
+	Repository
+	 ↓
+	Service
+	 ↓
+	Controller
+	 ↓
+	JSON Response	

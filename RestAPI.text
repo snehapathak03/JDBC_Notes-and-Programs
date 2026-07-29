@@ -380,3 +380,8 @@ REST API Naming Best Practices
 	Nested resources:/users/5/orders
 	Version APIs:/api/v1/students
 	Use lowercase with hyphens if needed:/order-items	
+
+Idempotent vs Safe Methods
+	Safe Methods:Do not modify server data.GET,HEAD,OPTIONS.
+	Idempotent Methods:Multiple identical requests have the same effect as one.GET,PUT,DELETE,HEAD,OPTIONS .
+	Not idempotent:POST  (usually creates a new resource each time)	

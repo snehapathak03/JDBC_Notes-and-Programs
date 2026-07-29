@@ -373,3 +373,10 @@ JSON:REST APIs usually exchange data using JSON.
 		"id":2
 	  }
 	]		
+
+REST API Naming Best Practices
+	Use nouns:/students BUT Don't use verbs:/getStudents
+	Use plural names:/products BUT Avoid:/product
+	Nested resources:/users/5/orders
+	Version APIs:/api/v1/students
+	Use lowercase with hyphens if needed:/order-items	

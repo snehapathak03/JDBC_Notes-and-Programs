@@ -385,3 +385,10 @@ Idempotent vs Safe Methods
 	Safe Methods:Do not modify server data.GET,HEAD,OPTIONS.
 	Idempotent Methods:Multiple identical requests have the same effect as one.GET,PUT,DELETE,HEAD,OPTIONS .
 	Not idempotent:POST  (usually creates a new resource each time)	
+
+Authentication in REST APIs
+	Basic Authentication:Username and password sent with each request (over HTTPS).
+	API Key:A unique key identifies the client.
+	JWT (JSON Web Token):Most common for modern applications.
+	Sent in the Authorization header:Authorization: Bearer eyJhbGciOi...
+	OAuth 2.0:Used for third-party authorization (e.g., "Sign in with Google").	

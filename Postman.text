@@ -241,3 +241,17 @@ viii.Team Collaboration
 3 History of Postman:Created in 2012 by Abhinav Asthana, Ankit Sobti, and Abhijit Kane.
 Initially developed as a Chrome extension.Later became a full desktop application.
 Today it is one of the most widely used API testing tools.
+
+4 Features
+i.API Testing
+ii.API Development
+iii.API Documentation
+iv.Automation
+v.Team Workspaces
+vi.Environment Variables
+vii.Mock Servers
+viii.Collection Runner
+ix.API Monitoring
+x.Newman CLI Support
+xi.GraphQL Support
+xii.WebSocket Support

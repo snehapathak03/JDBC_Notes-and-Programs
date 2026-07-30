@@ -202,4 +202,24 @@ Chapter 18 – Response Analysis:Every response contains
             45 ms
             Size
             2 KB
-            Body:JSON Data,Headers,Server Information                                         
+            Body:JSON Data,Headers,Server Information   
+
+EXTRA:
+1. What is Postman?Postman is an API Development and Testing Tool used by developers to create, test, debug, document, 
+    and automate REST APIs without writing frontend code.It allows developers to send HTTP requests directly to a server 
+    and inspect the responses.Instead of creating an HTML page or mobile application just to test an API, Postman lets you 
+    send requests directly.Real-Life Example:Imagine a restaurant.Customer → Waiter → Kitchen
+    Normally
+    Customer = Browser
+    Waiter = HTTP
+    Kitchen = Server
+    With Postman,
+    You become the waiter.
+    You directly send requests to the kitchen without needing a restaurant dining experience.
+    Browser
+       ↓
+    Server
+    OR
+    Postman
+       ↓
+    Server

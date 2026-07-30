@@ -255,3 +255,20 @@ ix.API Monitoring
 x.Newman CLI Support
 xi.GraphQL Support
 xii.WebSocket Support
+
+5: Postman Architecture
+Developer
+↓
+Postman
+↓
+HTTP Request
+↓
+REST API
+↓
+Application Server
+↓
+Database
+↓
+Response
+↓
+Postman

@@ -223,3 +223,17 @@ EXTRA:
     Postman
        ↓
     Server
+
+2 Why Do We Need Postman?Suppose you build this API:GET /students
+Without Postman,You would need to:Create HTML,Write JavaScript,Connect Backend and then Display Data.
+That is unnecessary when you only want to test the API.
+With Postman:Click Send -->Receive Response
+Advantages:
+i.Fast API Testing
+ii.No Frontend Required
+iii.Supports All HTTP Methods
+iv.Authentication Support
+v.Easy Debugging
+vi.Automation
+vii.API Documentation
+viii.Team Collaboration

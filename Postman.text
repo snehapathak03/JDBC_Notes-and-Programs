@@ -273,8 +273,30 @@ Response
 ↓
 Postman
 
-Chapter 6: Installing Postman
+6 Installing Postman
 Download from the official website.
 Install the desktop application.
 Sign in (optional but recommended).
 Create a workspace.
+
+7 User Interface
+Main components:
+----------------------------------
+New Request Tab
+----------------------------------
+Method Dropdown
+↓
+URL Bar
+↓
+Authorization
+↓
+Headers
+↓
+Params
+↓
+Body
+↓
+Send Button
+↓
+Response Area
+----------------------------------

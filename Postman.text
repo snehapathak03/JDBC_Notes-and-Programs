@@ -309,3 +309,15 @@ PATCH:Update partial data.PATCH /students/1
 DELETE:Delete data.DELETE /students/1
 HEAD:Returns only response headers.
 OPTIONS:Returns supported HTTP methods.
+
+9 Your First Request
+Suppose Spring Boot is running.
+http://localhost:8080/students
+Steps:i.Open Postman, ii.Select GET, iii.Enter URL, iv.Click Send
+Response:
+[
+  {
+    "id":1,
+    "name":"Sneha"
+  }
+]

@@ -321,3 +321,7 @@ Response:
     "name":"Sneha"
   }
 ]
+
+10 Request Components
+Every request consists of:
+Method + URL + Headers + Body + Authorization

@@ -300,3 +300,12 @@ Send Button
 ↓
 Response Area
 ----------------------------------
+
+8 HTTP Methods
+GET:Retrieve data.GET /students
+POST:Create data.POST /students
+PUT:Replace complete data.PUT /students/1
+PATCH:Update partial data.PATCH /students/1
+DELETE:Delete data.DELETE /students/1
+HEAD:Returns only response headers.
+OPTIONS:Returns supported HTTP methods.

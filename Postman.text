@@ -325,3 +325,19 @@ Response:
 10 Request Components
 Every request consists of:
 Method + URL + Headers + Body + Authorization
+
+11 URL
+Example:https://api.company.com/students/10
+Breakdown:
+https://
+Protocol
+↓
+api.company.com
+Host
+↓
+students
+
+Resource
+↓
+10
+ID

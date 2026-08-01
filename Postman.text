@@ -384,4 +384,12 @@ JSON Example
 Form Data: Useful for Image Upload,File Upload,Resume Upload
 Raw Body:Usually JSON.
 
+16 Authorization
+Supported types:
+No Auth:Public APIs
+Basic Auth:Username + Password
+Bearer Token:JWT  Example:Authorization: Bearer eyJhbGc...
+API Key Example:API_KEY: 123456
+OAuth 2.0:Used by:Google,Facebook,GitHub
+
 

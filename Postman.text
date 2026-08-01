@@ -358,3 +358,13 @@ Content-Type: application/json
 Accept: application/json
 Authorization: Bearer token
 User-Agent: PostmanRuntime
+
+Common Headers:
+Header				  Purpose
+Content-Type		Type of request body
+Accept				  Expected response type
+Authorization		Authentication
+Host				    Server hostname
+User-Agent			Client information
+
+

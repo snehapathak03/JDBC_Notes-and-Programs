@@ -367,4 +367,21 @@ Authorization		Authentication
 Host				    Server hostname
 User-Agent			Client information
 
+15 Body
+Body contains data sent to the server.Supported formats:
+i.JSON
+ii.XML
+iii.Form Data
+iv.x-www-form-urlencoded
+v.Binary
+vi.GraphQL
+vii.Plain Text
+JSON Example
+{
+  "name":"Sneha",
+  "city":"Nagpur"
+}
+Form Data: Useful for Image Upload,File Upload,Resume Upload
+Raw Body:Usually JSON.
+
 

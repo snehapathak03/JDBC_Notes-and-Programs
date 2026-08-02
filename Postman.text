@@ -480,3 +480,16 @@ pm.test("Response is JSON", function () {
 });
 These tests help ensure your API behaves as expected.
 
+24 Collection Runner
+Runs multiple API requests automatically.
+Example flow:
+Login
+↓
+Create Student
+↓
+Get Student
+↓
+Update Student
+↓
+Delete Student
+Useful for regression testing.

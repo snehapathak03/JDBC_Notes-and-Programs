@@ -454,3 +454,16 @@ Example:{{studentId}}
 Value:100
 Request:/students/{{studentId}}
 
+22 Import & Export
+Import:
+OpenAPI/Swagger files
+Collections
+JSON
+cURL commands
+
+Export:
+Collections
+Environments
+Documentation
+Useful for backups and sharing.
+

@@ -424,3 +424,12 @@ Client Errors
 Server Errors
 500 Internal Server Error
 503 Service Unavailable
+
+19 Collections->A Collection is a folder of API requests.
+Example:Student API
+├── GET Students
+├── POST Student
+├── PUT Student
+├── DELETE Student
+Benefits:Organize APIs,Share with teams,Run automated tests.
+

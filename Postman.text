@@ -433,3 +433,14 @@ Example:Student API
 ├── DELETE Student
 Benefits:Organize APIs,Share with teams,Run automated tests.
 
+20 Environments
+Suppose you have different servers:
+Development:localhost:8080
+Testing:test.company.com
+Production:api.company.com
+Instead of changing URLs repeatedly, create environment variables.
+Example:
+{{base_url}}
+Value:http://localhost:8080
+Now use:{{base_url}}/students
+

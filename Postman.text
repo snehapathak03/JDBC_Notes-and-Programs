@@ -444,3 +444,13 @@ Example:
 Value:http://localhost:8080
 Now use:{{base_url}}/students
 
+21 Variables
+Types of variables:
+1.Global
+2.Collection
+3.Environment
+4.Local
+Example:{{studentId}}
+Value:100
+Request:/students/{{studentId}}
+

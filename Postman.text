@@ -467,3 +467,16 @@ Environments
 Documentation
 Useful for backups and sharing.
 
+23 Tests (Assertions)
+After a request, you can validate the response automatically.
+Example:
+pm.test("Status is 200", function () {
+    pm.response.to.have.status(200);
+});
+
+Another example:
+pm.test("Response is JSON", function () {
+    pm.response.to.be.json;
+});
+These tests help ensure your API behaves as expected.
+

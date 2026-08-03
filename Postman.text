@@ -519,3 +519,14 @@ Difficult to test APIs	Easy API testing
 Limited request customization	Complete request customization
 No automated API tests	Supports automated tests
 
+29 Postman vs Swagger
+Postman	Swagger/OpenAPI
+API Testing	API Documentation
+Manual & automated requests	API specification
+Collections	Interactive documentation
+Environment support	API design-first approach
+
+Many teams use both together:
+Swagger to document APIs.
+Postman to test them.
+

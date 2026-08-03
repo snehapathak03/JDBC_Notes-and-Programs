@@ -511,3 +511,11 @@ Install:npm install -g newman
 Run a collection:newman run StudentAPI.postman_collection.json
 Used in CI/CD pipelines (e.g., Jenkins, GitHub Actions).
 
+28 Postman vs Browser
+Browser	Postman
+Designed for websites	Designed for APIs
+Limited control	Full control over requests
+Difficult to test APIs	Easy API testing
+Limited request customization	Complete request customization
+No automated API tests	Supports automated tests
+

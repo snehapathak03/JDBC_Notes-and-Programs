@@ -530,3 +530,11 @@ Many teams use both together:
 Swagger to document APIs.
 Postman to test them.
 
+30 Best Practices
+Organize requests into collections.
+Use environment variables instead of hardcoding URLs.
+Name requests clearly (e.g., GET Students, Create Student).
+Validate responses with tests.
+Secure secrets (API keys, tokens) using variables.
+Reuse common headers and authentication at the collection level.
+Keep collections version-controlled (e.g., Git).

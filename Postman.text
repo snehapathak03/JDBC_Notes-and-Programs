@@ -505,3 +505,9 @@ Health checks
 Availability monitoring
 Performance monitoring
 
+27 Newman
+Newman is Postman's command-line companion.
+Install:npm install -g newman
+Run a collection:newman run StudentAPI.postman_collection.json
+Used in CI/CD pipelines (e.g., Jenkins, GitHub Actions).
+

@@ -493,3 +493,8 @@ Update Student
 ↓
 Delete Student
 Useful for regression testing.
+
+25 Mock Servers
+Mock servers simulate API responses before the backend is ready.
+Example:Frontend developers can test against fake responses while backend development is still in progress.
+

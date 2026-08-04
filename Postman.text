@@ -538,3 +538,30 @@ Validate responses with tests.
 Secure secrets (API keys, tokens) using variables.
 Reuse common headers and authentication at the collection level.
 Keep collections version-controlled (e.g., Git).
+
+Complete API Testing Workflow:
+Spring Boot Application Starts
+   ↓
+Postman Sends HTTP Request
+   ↓
+@RestController
+   ↓
+@Service
+   ↓
+@Repository
+   ↓
+Database
+   ↓
+Repository
+   ↓
+Service
+   ↓
+Controller
+   ↓
+JSON Response
+   ↓
+Postman Displays Response
+   ↓
+Run Tests
+   ↓
+Save Request in Collection

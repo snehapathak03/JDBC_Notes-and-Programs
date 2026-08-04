@@ -565,3 +565,21 @@ Postman Displays Response
 Run Tests
    ↓
 Save Request in Collection
+
+Quick Revision Cheat Sheet
+Topic				        Key Point
+Postman				      API development and testing tool
+HTTP Methods		    GET, POST, PUT, PATCH, DELETE
+Request Parts		    Method, URL, Headers, Body, Authorization
+Response Parts		  Status, Headers, Body, Time, Size
+Collections			    Group related API requests
+Environments		    Store values for different deployments
+Variables			      Reusable dynamic values
+Headers				      Metadata such as Content-Type and Authorization
+Body Formats		    JSON, XML, Form Data, Binary, Raw
+Authentication		  Basic Auth, Bearer Token, API Key, OAuth 2.0
+Tests				        JavaScript assertions using pm.test()
+Collection          Runner	Execute multiple requests automatically
+Newman				      Command-line runner for Postman collections
+Mock Servers		    Simulate APIs before backend completion
+Monitors			      Scheduled API health checks

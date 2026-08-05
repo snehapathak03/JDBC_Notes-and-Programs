@@ -101,3 +101,10 @@ Another Real-Life Example is Suppose you're using an ATM.
 Scenario:You insert your ATM card.Enter the PIN.Request ₹5,000.But the ATM has no cash.
 Without exception handling:ATM Crashes and/or Screen Turns Off.With exception handling:Sorry!Insufficient Cash.
 Please try another ATM.The application continues to work gracefully.
+
+What Exactly is an Exception?An exception is an object that represents an abnormal condition occurring during the 
+execution of a program.Many beginners think an exception is just an error message.That's incorrect.An exception is an object.
+When something goes wrong, Java creates an object containing information about the problem.For example:int a = 10;int b = 0;
+System.out.println(a / b);
+Java internally creates an object similar to:ArithmeticException exception = new ArithmeticException("/ by zero");
+This object stores details such as:Exception type,Error message,Location of the error,Call stack.

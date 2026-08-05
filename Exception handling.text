@@ -1,0 +1,32 @@
+Complete Course Structure
+Module 1: Exception Handling (100% Complete)
+Introduction to Exception Handling
+Errors vs Exceptions
+Throwable Class Hierarchy
+Types of Exceptions
+Checked Exceptions
+Unchecked Exceptions
+Built-in Exceptions
+Exception Propagation
+try Block
+catch Block
+finally Block
+Multiple catch
+Nested try-catch
+Multi-catch (Java 7)
+throw Keyword
+throws Keyword
+Custom Exceptions
+User-defined Exceptions
+Chained Exceptions
+try-with-resources
+AutoCloseable Interface
+Stack Trace
+Assertions
+Best Practices
+Common Mistakes
+Real-world Examples
+JDBC Exception Handling
+Exception Handling in Spring Boot
+100+ Interview Questions
+Practice Programs

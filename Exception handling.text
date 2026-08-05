@@ -30,3 +30,13 @@ JDBC Exception Handling
 Exception Handling in Spring Boot
 100+ Interview Questions
 Practice Programs
+
+Chapter 1: Introduction to Exception Handling
+
+What is Exception Handling?Imagine you're writing a Java program.Everything is working perfectly until suddenly:User enters 
+a letter instead of a number.File you're trying to read doesn't exist.Database connection fails.Internet connection drops.
+Memory becomes full.Should the program immediately stop?If yes,the user loses everything.Instead,Java provides Exception 
+Handling, which allows the program to detect, report, and (where appropriate) recover from unexpected problems.
+Definition:Exception Handling is a mechanism in Java for detecting, handling, and recovering from runtime problems so that 
+the normal flow of the program can continue whenever possible.It separates normal business logic from error-handling logic, 
+making programs more robust and easier to maintain.

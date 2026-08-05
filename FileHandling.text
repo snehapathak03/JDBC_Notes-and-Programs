@@ -1,0 +1,50 @@
+Module 2: File Handling (100% Complete)
+Introduction
+File Class
+File Object
+Creating Files
+Reading Files
+Writing Files
+Appending Files
+Deleting Files
+Renaming Files
+Directory Handling
+Byte Streams
+Character Streams
+Buffered Streams
+FileInputStream
+FileOutputStream
+FileReader
+FileWriter
+BufferedReader
+BufferedWriter
+PrintWriter
+PrintStream
+DataInputStream
+DataOutputStream
+Object Streams
+Serialization
+Deserialization
+transient Keyword
+serialVersionUID
+RandomAccessFile
+Scanner Class
+Formatter Class
+Java NIO
+Path Interface
+Files Class
+Directory Traversal
+File Permissions
+ZIP Files
+CSV Files
+Properties Files
+Temporary Files
+File Locking
+Character Encoding
+UTF-8 vs UTF-16
+Reading Large Files
+Best Practices
+Common Mistakes
+Interview Questions
+Practice Programs
+Mini Projects

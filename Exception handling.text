@@ -108,3 +108,22 @@ When something goes wrong, Java creates an object containing information about t
 System.out.println(a / b);
 Java internally creates an object similar to:ArithmeticException exception = new ArithmeticException("/ by zero");
 This object stores details such as:Exception type,Error message,Location of the error,Call stack.
+
+Life Cycle of an Exception:Whenever an exception occurs, Java follows a sequence.
+Statement Executes
+↓
+Problem Occurs
+↓
+JVM Creates Exception Object
+↓
+JVM Searches for Handler
+↓
+Found?
+├── YES → Handle Exception → Continue
+└── NO → Program Terminates
+This sequence is one of the most commonly asked interview topics.
+
+Who Creates Exception Objects?There are two possibilities.
+1. JVM Creates It
+Example:int x = 10 / 0;The JVM automatically creates:ArithmeticException
+2. Programmer Creates It:Using the throw keyword:throw new ArithmeticException("Invalid Input");

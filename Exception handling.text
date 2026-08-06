@@ -157,3 +157,23 @@ Exception in thread "main"
 ArithmeticException
 Notice:End    never executes.
 
+What Happens With Exception Handling?
+public class Test {
+    public static void main(String[] args) {
+        System.out.println("Start");
+        try {
+            int a = 10 / 0;
+        } catch (ArithmeticException e) {
+            System.out.println("Cannot divide by zero");
+        }
+        System.out.println("End");
+    }
+}
+Output:Start
+Cannot divide by zero
+End
+Now the program continues after handling the exception.
+
+
+
+

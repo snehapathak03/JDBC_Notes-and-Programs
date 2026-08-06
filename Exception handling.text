@@ -189,3 +189,14 @@ Common Misconceptions:
 ❌ "Exceptions are compile-time errors."->No. Most exceptions occur during program execution (runtime).
 ❌ "Exception and Error are the same."->No.Errors and exceptions are different concepts.
 ❌ "Exception handling prevents exceptions."No.It handles exceptions after they occur; it doesn't prevent them from happening.
+
+Interview Questions
+1. What is Exception Handling?A mechanism in Java used to detect, handle, and recover from runtime problems so that the 
+application can continue running whenever appropriate.
+2. Why do we need Exception Handling?To prevent abrupt program termination, improve reliability, separate error-handling 
+logic from business logic, and provide meaningful feedback to users.
+3. Is an exception an object?Yes.Every exception in Java is an object derived from the Throwable class.
+4. Who creates exception objects?The JVM creates many built-in exception objects automatically.A programmer can create 
+and throw exception objects using the throw keyword.
+5. Does every exception terminate the program?No.If an exception is caught by a suitable catch block, the program can 
+continue executing.

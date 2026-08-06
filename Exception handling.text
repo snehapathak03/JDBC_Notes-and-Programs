@@ -182,3 +182,10 @@ Advantages of Exception Handling
 These details help developers locate and fix problems quickly.
 5. Improves Reliability:Applications become more stable because they can respond to common failures gracefully.
 
+Where Is Exception Handling Used?It's used in almost every Java application:Banking software,ATM systems,Hospital management 
+systems,E-commerce websites,Railway reservation systems,Spring Boot REST APIs,JDBC applications,Android apps,Desktop 
+applications and Cloud services.Whenever an operation can fail, exception handling is relevant.
+Common Misconceptions:
+❌ "Exceptions are compile-time errors."->No. Most exceptions occur during program execution (runtime).
+❌ "Exception and Error are the same."->No.Errors and exceptions are different concepts.
+❌ "Exception handling prevents exceptions."No.It handles exceptions after they occur; it doesn't prevent them from happening.

@@ -200,3 +200,11 @@ logic from business logic, and provide meaningful feedback to users.
 and throw exception objects using the throw keyword.
 5. Does every exception terminate the program?No.If an exception is caught by a suitable catch block, the program can 
 continue executing.
+
+Key Takeaways
+Exception Handling manages unexpected runtime problems.
+Exceptions are objects, not just messages.
+The JVM creates exception objects for many runtime failures.
+If an exception is not handled, the JVM terminates the program.
+try and catch blocks allow programs to recover from many exceptions.
+Exception handling improves robustness, maintainability, and user experience.

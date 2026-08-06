@@ -143,3 +143,17 @@ If abc.txt doesn't exist, an exception occurs.
 Database:Connection con =DriverManager.getConnection(...);
 If the database server is unavailable or credentials are wrong, an exception is thrown.
 
+What Happens Without Exception Handling?
+public class Test {
+    public static void main(String[] args) {
+        System.out.println("Start");
+        int a = 10 / 0;
+        System.out.println("End");
+    }
+}
+Output
+Start
+Exception in thread "main"
+ArithmeticException
+Notice:End    never executes.
+

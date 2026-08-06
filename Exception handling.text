@@ -127,3 +127,19 @@ Who Creates Exception Objects?There are two possibilities.
 1. JVM Creates It
 Example:int x = 10 / 0;The JVM automatically creates:ArithmeticException
 2. Programmer Creates It:Using the throw keyword:throw new ArithmeticException("Invalid Input");
+
+Where Can Exceptions Occur?Almost anywhere.Examples include:
+Arithmetic:int x = 10 / 0;
+
+Array:int[] arr = new int[5];
+System.out.println(arr[10]);
+
+String:String s = null;
+System.out.println(s.length());
+
+File:FileReader reader =new FileReader("abc.txt");
+If abc.txt doesn't exist, an exception occurs.
+
+Database:Connection con =DriverManager.getConnection(...);
+If the database server is unavailable or credentials are wrong, an exception is thrown.
+

@@ -250,3 +250,16 @@ Since java.lang is imported automatically, you don't need to import it explicitl
 StackOverflowError.Each would be unrelated.It would be impossible to write generic code like:catch(Throwable t)
 The Throwable class provides a common type for all problems.
 
+4. Throwable Hierarchy:The complete hierarchy begins with Object.
+
+                         Object
+                            │
+                            │
+                      Throwable
+                     /          \
+                    /            \
+                Error         Exception
+                                 │
+                                 │
+                       RuntimeException
+Every exception and every error ultimately derives from Throwable.

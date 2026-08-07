@@ -263,3 +263,39 @@ The Throwable class provides a common type for all problems.
                                  │
                        RuntimeException
 Every exception and every error ultimately derives from Throwable.
+
+5. Expanded Throwable Hierarchy
+Object
+│
+└────────────── Throwable
+               │
+     ┌─────────┴─────────┐
+     │                   │
+   Error             Exception
+     │                   │
+     │          ┌────────┴─────────┐
+     │          │                  │
+VirtualMachineException       IOException
+     │                  FileNotFoundException
+OutOfMemoryError
+StackOverflowError
+
+RuntimeException
+│
+├── ArithmeticException
+├── NullPointerException
+├── ArrayIndexOutOfBoundsException
+├── ClassCastException
+├── NumberFormatException
+├── IllegalArgumentException
+└── IllegalStateException
+
+Exception
+│
+├── SQLException
+├── IOException
+├── InterruptedException
+├── ParseException
+├── ClassNotFoundException
+└── ReflectiveOperationException
+

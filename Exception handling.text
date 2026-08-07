@@ -236,3 +236,17 @@ Understand how JVM creates exception objects.
 Identify Checked and Unchecked Exceptions.
 Explain why Errors should generally not be handled.
 Answer MNC interview questions on Exception Hierarchy.
+
+1. Introduction:In the previous chapter, we learned that an exception is an object.Now the question is:Where do these 
+exception objects come from?The answer is:All exceptions and errors in Java are descendants of a single root class 
+called Throwable.Everything related to exception handling revolves around this class.
+
+2. What is Throwable?Throwable is the root class of Java's exception handling mechanism.Every object that can be thrown 
+using the throw keyword or by the JVM must inherit from Throwable.
+Definition:Throwable is the superclass of all Errors and Exceptions in Java.Package:java.lang.Throwable
+Since java.lang is imported automatically, you don't need to import it explicitly.
+
+3. Why Did Java Introduce Throwable?Suppose Java had no common parent class.ArithmeticException,IOException,NullPointerException,
+StackOverflowError.Each would be unrelated.It would be impossible to write generic code like:catch(Throwable t)
+The Throwable class provides a common type for all problems.
+

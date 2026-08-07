@@ -227,3 +227,12 @@ JVM internals of exception creation
 Memory representation of exception objects
 Complete class hierarchy with diagrams
 Interview-focused explanations
+
+Learning Objectives
+Understand what Throwable is.
+Differentiate between Error and Exception.
+Explain the complete Java Exception Hierarchy.
+Understand how JVM creates exception objects.
+Identify Checked and Unchecked Exceptions.
+Explain why Errors should generally not be handled.
+Answer MNC interview questions on Exception Hierarchy.

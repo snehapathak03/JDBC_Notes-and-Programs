@@ -219,3 +219,11 @@ What happens when an exception is not handled?
 Why are exceptions considered objects?
 Can a Java program continue after an exception? Under what condition?
 
+Chapter 2: Errors vs Exceptions & the Complete Throwable Hierarchy
+What is Throwable?
+Difference between Error and Exception
+Checked vs Unchecked Exceptions (overview)
+JVM internals of exception creation
+Memory representation of exception objects
+Complete class hierarchy with diagrams
+Interview-focused explanations

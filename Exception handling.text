@@ -299,3 +299,28 @@ Exception
 ├── ClassNotFoundException
 └── ReflectiveOperationException
 
+6. What is Error?An Error represents a serious problem that occurs in the JVM.Errors generally indicate that the JVM 
+itself or the execution environment has encountered a condition from which recovery is difficult or impossible.Examples:
+Out of Memory,Stack Overflow,JVM Internal Failure
+Definition:Errors are serious problems that applications normally should not try to handle.
+
+7. Examples of Errors
+OutOfMemoryError--->int[] arr = new int[999999999];
+Possible Output:Exception in thread "main"
+java.lang.OutOfMemoryError
+Reason:The JVM cannot allocate enough memory.
+
+StackOverflowError--->
+public class Demo {
+    static void test() {
+        test();
+    }
+    public static void main(String[] args) {
+        test();
+    }
+}
+Output:java.lang.StackOverflowError
+Reason:Infinite recursion fills the call stack.
+
+InternalError:Occurs due to internal JVM failures.
+Rarely encountered by application developers.

@@ -208,3 +208,14 @@ The JVM creates exception objects for many runtime failures.
 If an exception is not handled, the JVM terminates the program.
 try and catch blocks allow programs to recover from many exceptions.
 Exception handling improves robustness, maintainability, and user experience.
+
+Practice Questions
+What is an exception in Java?
+Why is exception handling important?
+Explain the life cycle of an exception.
+Who creates exception objects?
+Give five real-world examples where exception handling is required.
+What happens when an exception is not handled?
+Why are exceptions considered objects?
+Can a Java program continue after an exception? Under what condition?
+

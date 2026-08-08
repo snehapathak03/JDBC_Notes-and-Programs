@@ -336,3 +336,22 @@ Rarely encountered by application developers.
 handled gracefully by the application.Examples:Invalid input,Missing file,Division by zero,Database unavailable,Invalid URL.
 Unlike Errors, Exceptions are expected to be handled.
 
+10. Examples of Exceptions
+ArithmeticException
+int a = 10;
+int b = 0;
+System.out.println(a / b);
+Output:ArithmeticException: / by zero
+
+NullPointerException:String name = null;
+System.out.println(name.length());
+Output:NullPointerException
+
+ArrayIndexOutOfBoundsException
+int[] arr = {10,20};
+System.out.println(arr[5]);
+Output:ArrayIndexOutOfBoundsException
+
+FileNotFoundException
+FileReader reader =new FileReader("student.txt");
+If the file does not exist:FileNotFoundException

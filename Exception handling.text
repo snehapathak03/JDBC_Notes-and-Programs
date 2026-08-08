@@ -381,3 +381,13 @@ Engine Exploded
 Vehicle Destroyed
 Cannot continue.
 
+13. Why Errors Are Rarely Caught
+Technically, you can write:
+try {
+    // code
+}
+catch(Error e) {
+    System.out.println(e);
+}
+But this is almost never recommended.
+Why?If memory is exhausted,how will your program safely recover?It usually cannot.

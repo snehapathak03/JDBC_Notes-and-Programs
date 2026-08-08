@@ -332,3 +332,7 @@ Rarely encountered by application developers.
 . Usually not handled
 . Mostly related to memory or JVM resources
 
+9. What is Exception?An Exception represents a condition that occurs during program execution and can often be 
+handled gracefully by the application.Examples:Invalid input,Missing file,Division by zero,Database unavailable,Invalid URL.
+Unlike Errors, Exceptions are expected to be handled.
+

@@ -391,3 +391,16 @@ catch(Error e) {
 }
 But this is almost never recommended.
 Why?If memory is exhausted,how will your program safely recover?It usually cannot.
+
+14. RuntimeException
+RuntimeException is a subclass of Exception.
+Hierarchy:
+Throwable
+↓
+Exception
+↓
+RuntimeException
+These exceptions occur during execution.
+Examples:
+ArithmeticException,NullPointerException,ClassCastException,NumberFormatException,IllegalArgumentException,
+ArrayIndexOutOfBoundsException.These are called Unchecked Exceptions.

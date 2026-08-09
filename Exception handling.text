@@ -422,3 +422,21 @@ int b = 0;
 System.out.println(a / b);
 Compiles successfully.
 Fails only during execution.
+
+17. JVM Exception Creation Process
+Suppose this statement executes:
+int x = 10 / 0;
+Internally:
+Execute Statement
+↓
+Division by Zero
+↓
+JVM Detects Problem
+↓
+Create ArithmeticException Object
+↓
+Search for Matching catch Block
+↓
+Found?
+YES → Execute catch
+NO → Terminate Program

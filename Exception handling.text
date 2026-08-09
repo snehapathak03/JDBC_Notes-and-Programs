@@ -464,3 +464,25 @@ Cause
 null
 Stack Trace
 Current execution path
+
+19. Important Methods of Throwable
+getMessage() : Returns the exception message.
+try {
+    int x = 10 / 0;
+}
+catch(Exception e) {
+    System.out.println(e.getMessage());
+}
+Output:/ by zero
+
+toString()
+Returns:ExceptionName: Message
+Example:System.out.println(e);
+Output:java.lang.ArithmeticException: / by zero
+
+printStackTrace():Prints the complete stack trace.
+Example:e.printStackTrace();
+Output (simplified):java.lang.ArithmeticException: / by zero
+                    at Demo.main(Demo.java:5)
+Very useful during debugging.
+getCause() : Returns the underlying cause of an exception, if one exists.

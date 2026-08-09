@@ -404,3 +404,12 @@ These exceptions occur during execution.
 Examples:
 ArithmeticException,NullPointerException,ClassCastException,NumberFormatException,IllegalArgumentException,
 ArrayIndexOutOfBoundsException.These are called Unchecked Exceptions.
+
+15. Checked Exceptions
+Checked exceptions are verified by the compiler.
+Examples:IOException,SQLException,FileNotFoundException,InterruptedException,ParseException
+ClassNotFoundException,If you don't handle them,your code will not compile.
+Example:
+FileReader reader =new FileReader("abc.txt");
+Compiler:Unhandled exception type FileNotFoundException
+

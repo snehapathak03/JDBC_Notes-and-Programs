@@ -440,3 +440,27 @@ Search for Matching catch Block
 Found?
 YES → Execute catch
 NO → Terminate Program
+
+18. Exception Object Internals
+An exception object stores information such as:
+ArithmeticException
+↓
+Message
+↓
+Stack Trace
+↓
+Cause
+↓
+Suppressed Exceptions
+For example:
+ArithmeticException e =
+new ArithmeticException("/ by zero");
+The object contains:
+Type
+ArithmeticException
+Message
+"/ by zero"
+Cause
+null
+Stack Trace
+Current execution path

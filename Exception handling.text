@@ -541,3 +541,13 @@ RuntimeException represents unchecked exceptions.
 Other subclasses of Exception (such as IOException) are typically checked exceptions.
 Exception objects carry useful debugging information like messages and stack traces.
 
+Practice Questions
+Draw the complete Throwable hierarchy.
+Explain the difference between Error and Exception with examples.
+Why does Java use the Throwable class as the root of the hierarchy?
+Explain RuntimeException with examples.
+What is the difference between checked and unchecked exceptions?
+Why should Error generally not be caught?
+Explain how the JVM creates and processes an exception object.
+What are the important methods of the Throwable class, and what do they do?
+Next Chapter: Checked Exceptions vs Unchecked Exceptions (Complete Deep Dive)

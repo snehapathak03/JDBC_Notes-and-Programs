@@ -500,3 +500,22 @@ Stack Trace : main()
 Reference used by JVM
 ↓
 catch(Exception e)
+
+21. Interview Questions
+Q1. What is Throwable?
+Answer:Throwable is the root class of Java's exception hierarchy. All exceptions and errors inherit from it.
+
+Q2. What is the difference between Error and Exception?
+Answer:Errors indicate serious JVM-level problems that are usually unrecoverable, whereas exceptions represent 
+application-level problems that can often be handled.
+
+Q3. Can we catch an Error?
+Answer:Yes, it is technically possible because Error extends Throwable. However, it is generally discouraged 
+because errors usually indicate unrecoverable conditions.
+
+Q4. Why do all exceptions inherit from Throwable?
+Answer:This provides a common parent class, enabling generic exception handling and allowing the JVM to throw 
+any problem object consistently.
+
+Q5. What information does an exception object contain?
+Answer:An exception object typically contains:Exception type,Error message,Stack trace,Cause,Suppressed exceptions (if any).

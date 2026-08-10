@@ -532,3 +532,12 @@ Do not catch Throwable unless you have a very specialized framework-level reason
 Avoid catching Error in normal application code.
 Use printStackTrace() or, preferably in production applications, a logging framework to record exception details.
 
+Summary
+Throwable is the root class of Java's exception mechanism.
+It has two major subclasses: Error and Exception.
+Errors are serious JVM-related issues and are generally unrecoverable.
+Exceptions are application-level problems that can often be handled.
+RuntimeException represents unchecked exceptions.
+Other subclasses of Exception (such as IOException) are typically checked exceptions.
+Exception objects carry useful debugging information like messages and stack traces.
+

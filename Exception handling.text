@@ -486,3 +486,17 @@ Output (simplified):java.lang.ArithmeticException: / by zero
                     at Demo.main(Demo.java:5)
 Very useful during debugging.
 getCause() : Returns the underlying cause of an exception, if one exists.
+
+20. Memory Representation
+Suppose:int x = 10 / 0;
+Conceptually:Heap Memory
++--------------------------------------+
+ArithmeticException Object
+Message : "/ by zero"
+Cause : null
+Stack Trace : main()
++--------------------------------------+
+↓
+Reference used by JVM
+↓
+catch(Exception e)

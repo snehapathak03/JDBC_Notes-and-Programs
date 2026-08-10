@@ -519,3 +519,9 @@ any problem object consistently.
 
 Q5. What information does an exception object contain?
 Answer:An exception object typically contains:Exception type,Error message,Stack trace,Cause,Suppressed exceptions (if any).
+
+Common Mistakes
+Confusing Errors with Exceptions.
+Assuming every exception is checked.
+Catching Throwable or Error indiscriminately in application code.
+Ignoring stack traces when debugging.

@@ -525,3 +525,10 @@ Confusing Errors with Exceptions.
 Assuming every exception is checked.
 Catching Throwable or Error indiscriminately in application code.
 Ignoring stack traces when debugging.
+
+Best Practices
+Catch the most specific exception possible.
+Do not catch Throwable unless you have a very specialized framework-level reason.
+Avoid catching Error in normal application code.
+Use printStackTrace() or, preferably in production applications, a logging framework to record exception details.
+

@@ -582,3 +582,17 @@ So we have:
 Checked Exceptions:Compiler checks them.
 Unchecked Exceptions:Compiler does not force you to handle them.
 
+2. What is a Checked Exception?
+A checked exception is an exception that the Java compiler requires you to either:Handle using try-catch,
+ or Declare using throws. They are checked at compile time.
+Example:
+import java.io.FileReader;
+public class Demo {
+    public static void main(String[] args) {
+        FileReader file =
+                new FileReader("student.txt");
+    }
+}
+This gives a compilation error similar to:Unhandled exception type FileNotFoundException.Why?Because FileNotFoundException 
+is a checked exception.
+

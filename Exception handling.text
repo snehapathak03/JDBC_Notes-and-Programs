@@ -640,3 +640,28 @@ Checked Exception
         │
         └── throws
 		
+6. Common Checked Exceptions
+IOException
+java.io.IOException
+Used for input/output failures.
+
+FileNotFoundException
+java.io.FileNotFoundException
+Occurs when a requested file cannot be opened.
+
+SQLException
+java.sql.SQLException
+Used for database-related problems.
+Extremely important for JDBC.
+
+ClassNotFoundException
+java.lang.ClassNotFoundException
+Occurs when a class cannot be found while loading it dynamically.
+
+InterruptedException
+java.lang.InterruptedException
+Common in multithreaded programs when a sleeping/waiting thread is interrupted.
+
+ParseException
+java.text.ParseException
+Can occur when parsing text into certain date/format representations.

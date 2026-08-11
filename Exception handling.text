@@ -618,3 +618,25 @@ public class Demo {
     }
 }
 
+5. Method 2: throws
+Instead of handling the exception, you can pass responsibility to the caller.
+import java.io.FileReader;
+import java.io.FileNotFoundException;
+public class Demo {
+    static void readFile()
+            throws FileNotFoundException {
+        FileReader file = new FileReader("student.txt");
+    }
+    public static void main(String[] args)
+            throws FileNotFoundException {
+        readFile();
+    }
+}
+We'll study throws deeply in a later chapter.
+For now remember:
+Checked Exception
+        │
+        ├── try-catch
+        │
+        └── throws
+		

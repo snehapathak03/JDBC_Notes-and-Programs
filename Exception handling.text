@@ -596,3 +596,9 @@ public class Demo {
 This gives a compilation error similar to:Unhandled exception type FileNotFoundException.Why?Because FileNotFoundException 
 is a checked exception.
 
+3. Why Does the Compiler Check It?
+Imagine you're writing:FileReader file = new FileReader("student.txt");
+There is a genuine possibility that:student.txt doesn't exist.
+Java designers want you to explicitly decide:"What should my program do if the file doesn't exist?"
+So the compiler forces you to handle or declare the exception.
+

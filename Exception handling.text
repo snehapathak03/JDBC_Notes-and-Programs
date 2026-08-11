@@ -551,3 +551,34 @@ Why should Error generally not be caught?
 Explain how the JVM creates and processes an exception object.
 What are the important methods of the Throwable class, and what do they do?
 Next Chapter: Checked Exceptions vs Unchecked Exceptions (Complete Deep Dive)
+
+Chapter 3: Checked vs Unchecked Exceptions — Complete Deep Dive
+1. First Understand the Big Picture
+We already learned:
+Object
+   │
+   ▼
+Throwable
+   │
+   ├────────────── Error
+   │
+   └────────────── Exception
+                    │
+                    ├────────────── RuntimeException
+                    │
+                    └────────────── Other Exceptions
+
+Now Exception is broadly divided into:
+
+                    Exception
+                       │
+             ┌─────────┴─────────┐
+             │                   │
+       Checked Exception    RuntimeException
+                                  │
+                           Unchecked Exception
+
+So we have:
+Checked Exceptions:Compiler checks them.
+Unchecked Exceptions:Compiler does not force you to handle them.
+

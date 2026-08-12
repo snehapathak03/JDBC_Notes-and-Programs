@@ -697,3 +697,18 @@ public class Demo {
 }
 Does the compiler complain?No.The program compiles.
 When you run it:ArithmeticException occurs.
+
+10. Why Isn't the Compiler Checking This?
+Because the compiler cannot reasonably force you to handle every possible programming mistake.
+For example:
+String name = null;
+name.length();
+This is generally a programming logic problem.
+The compiler cannot determine whether name will actually be null at runtime.
+Therefore:
+Compile Time
+      ↓
+No Error
+Run Time
+      ↓
+NullPointerException

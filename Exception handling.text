@@ -739,3 +739,22 @@ Thread.sleep(-100);
 Can result in an IllegalArgumentException because the argument is invalid.
 IllegalStateException
 Occurs when a method is invoked when an object is not in an appropriate state.
+
+12. Hierarchy of Unchecked Exceptions
+Throwable
+   │
+   └── Exception
+         │
+         └── RuntimeException
+                │
+                ├── ArithmeticException
+                ├── NullPointerException
+                ├── ClassCastException
+                ├── NumberFormatException
+                ├── IllegalArgumentException
+                ├── IllegalStateException
+                ├── IndexOutOfBoundsException
+                │      │
+                │      ├── ArrayIndexOutOfBoundsException
+                │      └── StringIndexOutOfBoundsException
+                └── ...

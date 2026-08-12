@@ -665,3 +665,20 @@ Common in multithreaded programs when a sleeping/waiting thread is interrupted.
 ParseException
 java.text.ParseException
 Can occur when parsing text into certain date/format representations.
+
+7. Hierarchy of Checked Exceptions
+Simplified:
+Throwable
+   │
+   └── Exception
+         │
+         ├── IOException
+         │     │
+         │     └── FileNotFoundException
+         │
+         ├── SQLException
+         │
+         ├── ClassNotFoundException
+         │
+         └── InterruptedException
+These are checked because they are not subclasses of RuntimeException.

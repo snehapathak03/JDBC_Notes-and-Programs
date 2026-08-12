@@ -686,3 +686,14 @@ These are checked because they are not subclasses of RuntimeException.
 8. What is an Unchecked Exception?
 An unchecked exception is an exception that the compiler does not require you to catch or declare.
 They are primarily represented by subclasses of:RuntimeException
+
+9. Example of Unchecked Exception
+public class Demo {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 0;
+        System.out.println(a / b);
+    }
+}
+Does the compiler complain?No.The program compiles.
+When you run it:ArithmeticException occurs.

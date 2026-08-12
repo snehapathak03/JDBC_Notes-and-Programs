@@ -712,3 +712,30 @@ No Error
 Run Time
       ↓
 NullPointerException
+
+11. Common Unchecked Exceptions
+Memorize these.
+ArithmeticException
+10 / 0
+NullPointerException
+String s = null;
+s.length();
+ArrayIndexOutOfBoundsException
+int[] arr = {10,20};
+
+arr[5];
+StringIndexOutOfBoundsException
+String s = "Java";
+
+s.charAt(10);
+NumberFormatException
+Integer.parseInt("abc");
+ClassCastException
+Object obj = "Java";
+
+Integer number = (Integer) obj;
+IllegalArgumentException
+Thread.sleep(-100);
+Can result in an IllegalArgumentException because the argument is invalid.
+IllegalStateException
+Occurs when a method is invoked when an object is not in an appropriate state.

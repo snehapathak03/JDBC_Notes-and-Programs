@@ -770,4 +770,13 @@ RuntimeException
     ↓
 Exception
 Therefore:IOException → Checked
-RuntimeException → Unchecked                
+RuntimeException → Unchecked     
+
+14. Checked vs Unchecked — Core Difference
+Feature						Checked								Unchecked
+Checked by compiler?		Yes									No
+Must catch/declare?			Yes									No
+Main 						superclass	Exception				RuntimeException
+Usually represents			Recoverable external conditions		Programming/logic errors
+Example						IOException							NullPointerException
+Compile-time enforcement	Yes									No

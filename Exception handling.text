@@ -780,3 +780,8 @@ Main 						superclass	Exception				RuntimeException
 Usually represents			Recoverable external conditions		Programming/logic errors
 Example						IOException							NullPointerException
 Compile-time enforcement	Yes									No
+
+15. Easy Memory Trick
+Remember:
+Checked:"Compiler says: Handle me!"
+Unchecked:"Compiler says: Your responsibility!"

@@ -758,3 +758,16 @@ Throwable
                 │      ├── ArrayIndexOutOfBoundsException
                 │      └── StringIndexOutOfBoundsException
                 └── ...
+
+13. The Most Important Rule
+Remember this:If an exception is a subclass of RuntimeException, it is unchecked.If it is a subclass of Exception 
+but not RuntimeException, it is generally checked.Example:
+IOException
+    ↓
+Exception
+but:
+RuntimeException
+    ↓
+Exception
+Therefore:IOException → Checked
+RuntimeException → Unchecked                

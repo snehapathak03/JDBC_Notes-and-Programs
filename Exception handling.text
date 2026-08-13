@@ -807,3 +807,26 @@ Account account = null;
 account.getBalance();
 This is a NullPointerException.
 The application developer should fix the underlying logic rather than rely on catching the exception everywhere.
+
+17. Checked Exception Example with JDBC
+This is particularly important for you because you're learning JDBC.
+import java.sql.*;
+public class Demo {
+    public static void main(String[] args) {
+        try {
+            Connection con =
+                DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/banking_system",
+                    "root",
+                    "password"
+                );
+        } catch (SQLException e) {
+
+            System.out.println(
+                "Database connection failed"
+            );
+        }
+    }
+}
+SQLException is checked.
+Therefore Java requires handling or declaration.

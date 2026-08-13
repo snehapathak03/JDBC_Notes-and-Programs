@@ -809,7 +809,6 @@ This is a NullPointerException.
 The application developer should fix the underlying logic rather than rely on catching the exception everywhere.
 
 17. Checked Exception Example with JDBC
-This is particularly important for you because you're learning JDBC.
 import java.sql.*;
 public class Demo {
     public static void main(String[] args) {
@@ -830,3 +829,20 @@ public class Demo {
 }
 SQLException is checked.
 Therefore Java requires handling or declaration.
+
+18. File Handling Example
+import java.io.*;
+public class Demo {
+    public static void main(String[] args) {
+        try {
+            FileReader reader =
+                new FileReader("data.txt");
+        } catch (FileNotFoundException e) {
+            System.out.println(
+                "File does not exist"
+            );
+        }
+    }
+}
+FileNotFoundException is checked.
+This is one reason File Handling and Exception Handling are closely connected.

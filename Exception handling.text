@@ -785,3 +785,25 @@ Compile-time enforcement	Yes									No
 Remember:
 Checked:"Compiler says: Handle me!"
 Unchecked:"Compiler says: Your responsibility!"
+
+16. Real-World Example
+Suppose you're building a banking application.
+Database unavailable
+Application
+     ↓
+Database
+     X
+Connection Failed
+This is a possible external condition.
+You may handle it:
+try {
+    // database operation
+}
+catch (SQLException e) {
+    // handle database failure
+}
+Programming mistake
+Account account = null;
+account.getBalance();
+This is a NullPointerException.
+The application developer should fix the underlying logic rather than rely on catching the exception everywhere.

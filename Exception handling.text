@@ -846,3 +846,14 @@ public class Demo {
 }
 FileNotFoundException is checked.
 This is one reason File Handling and Exception Handling are closely connected.
+
+19. Unchecked Exception Example
+public class Demo {
+    public static void main(String[] args) {
+        String name = null;
+        System.out.println(name.length());
+    }
+}
+Compiler:No compilation error
+Runtime:NullPointerException
+

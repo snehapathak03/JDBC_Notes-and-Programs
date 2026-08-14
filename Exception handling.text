@@ -879,3 +879,11 @@ Must catch OR declare
     │
     └── throws
 
+22. Can We Use throws with Unchecked Exceptions?
+Yes.For example:
+public static void divide()
+        throws ArithmeticException {
+    int x = 10 / 0;
+}
+This compiles.But it is generally unnecessary because ArithmeticException is unchecked.
+

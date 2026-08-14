@@ -870,3 +870,12 @@ try {
 }
 So:Unchecked Can be handled{YES} ,Must be handled[ NO]
 
+21. Can We Handle Checked Exceptions?
+Yes.And normally you must either handle or declare them.
+Checked
+    ↓
+Must catch OR declare
+    ├── try-catch
+    │
+    └── throws
+

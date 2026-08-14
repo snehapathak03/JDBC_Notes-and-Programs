@@ -857,3 +857,16 @@ public class Demo {
 Compiler:No compilation error
 Runtime:NullPointerException
 
+20. Can We Handle Unchecked Exceptions?
+Yes.Unchecked does not mean:"Cannot be handled."It means:"Compiler does not force you to handle it."
+You can still write:
+try {
+    String name = null;
+    System.out.println(name.length());
+} catch (NullPointerException e) {
+    System.out.println(
+        "Name cannot be null"
+    );
+}
+So:Unchecked Can be handled{YES} ,Must be handled[ NO]
+

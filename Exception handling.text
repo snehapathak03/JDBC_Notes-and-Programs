@@ -887,3 +887,12 @@ public static void divide()
 }
 This compiles.But it is generally unnecessary because ArithmeticException is unchecked.
 
+23. Can We Use try-catch for Checked Exceptions?
+Yes.
+try {
+    FileReader reader =
+        new FileReader("abc.txt");
+}
+catch (FileNotFoundException e) {
+    System.out.println("File missing");
+}

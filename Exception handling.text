@@ -932,3 +932,13 @@ Exception
    │
    └── Other subclasses → Generally Checked
    
+28. Another Interview Trap
+Is Error a checked exception?
+No.Errors are not exceptions at all.
+Hierarchy:
+Throwable
+   │
+   ├── Error
+   │
+   └── Exception
+Error is a separate branch.

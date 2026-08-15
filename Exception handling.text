@@ -942,3 +942,15 @@ Throwable
    │
    └── Exception
 Error is a separate branch.
+
+29. Compile-Time vs Runtime
+Let's compare.
+Checked Exception
+FileReader reader = new FileReader("abc.txt");
+Compiler:
+Possible checked exception!
+Handle or declare it.
+Unchecked Exception
+int x = 10 / 0;
+Compiler:No exception-handling requirement.
+Runtime:ArithmeticException

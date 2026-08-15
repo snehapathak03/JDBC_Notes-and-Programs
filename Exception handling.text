@@ -905,3 +905,10 @@ try {
 catch (ArithmeticException e) {
     System.out.println("Cannot divide by zero");
 }
+
+25. Why Does Java Have Checked Exceptions?
+This is a very important conceptual interview question.
+Java's checked exceptions provide compile-time enforcement for failures that a caller may reasonably be expected to anticipate and handle.
+For example:new FileReader("data.txt");
+A file may legitimately be absent.Therefore Java forces you to address that possibility.
+

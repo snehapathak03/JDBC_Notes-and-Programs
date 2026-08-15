@@ -919,3 +919,16 @@ String name = null;
 name.length();
 The appropriate fix is often:Fix the program logic
 rather than:Catch NullPointerException everywhere
+
+27. Important Interview Trap
+Question:Is Exception itself checked or unchecked?
+Answer:Exception is the superclass of both checked exceptions and RuntimeException.
+So saying simply:"Exception is checked"
+is incomplete.
+Correct explanation:
+Exception
+   │
+   ├── RuntimeException → Unchecked
+   │
+   └── Other subclasses → Generally Checked
+   

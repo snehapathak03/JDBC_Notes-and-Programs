@@ -954,3 +954,34 @@ Unchecked Exception
 int x = 10 / 0;
 Compiler:No exception-handling requirement.
 Runtime:ArithmeticException
+
+30. Exception Handling Decision Tree
+Use this mental model:
+Problem occurs
+      │
+      ▼
+Is it an Error?
+      │
+   YES│
+      ▼
+Usually don't catch it
+      │
+      NO
+      │
+      ▼
+Is it RuntimeException?
+      │
+   YES│
+      ▼
+Unchecked
+      │
+      ▼
+Compiler doesn't force handling
+      │
+      NO
+      │
+      ▼
+Checked Exception
+      │
+      ▼
+Must catch OR declare

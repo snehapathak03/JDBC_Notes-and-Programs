@@ -912,3 +912,10 @@ Java's checked exceptions provide compile-time enforcement for failures that a c
 For example:new FileReader("data.txt");
 A file may legitimately be absent.Therefore Java forces you to address that possibility.
 
+26. Why Are Runtime Exceptions Unchecked?
+Runtime exceptions frequently indicate programming defects or invalid assumptions.
+Example:
+String name = null;
+name.length();
+The appropriate fix is often:Fix the program logic
+rather than:Catch NullPointerException everywhere

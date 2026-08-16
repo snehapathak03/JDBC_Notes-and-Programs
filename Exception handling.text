@@ -1036,3 +1036,23 @@ static void readFile()
 Now the method signature communicates:
 "This method may throw FileNotFoundException; callers must deal with it."
 
+35. Exception Propagation Preview
+Suppose:
+main()
+  ↓
+methodA()
+  ↓
+methodB()
+  ↓
+methodC()
+
+If methodC() throws a checked exception:
+methodC()
+    ↓
+methodB()
+    ↓
+methodA()
+    ↓
+main()
+The exception can propagate upward until it is handled.
+

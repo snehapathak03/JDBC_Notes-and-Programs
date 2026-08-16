@@ -985,3 +985,19 @@ Checked Exception
       │
       ▼
 Must catch OR declare
+
+31. Important Examples Table
+Exception					Type			Why
+ArithmeticException			Unchecked		RuntimeException subclass
+NullPointerException		Unchecked		RuntimeException subclass
+NumberFormatException		Unchecked		RuntimeException subclass
+ClassCastException			Unchecked		RuntimeException subclass
+IllegalArgumentException	Unchecked		RuntimeException subclass
+IOException					Checked			Not RuntimeException
+FileNotFoundException		Checked			IOException subclass
+SQLException				Checked			Not RuntimeException
+ClassNotFoundException		Checked			Not RuntimeException
+InterruptedException		Checked			Not RuntimeException
+OutOfMemoryError			Error			Error subclass
+StackOverflowError			Error			Error subclass
+

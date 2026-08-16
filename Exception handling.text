@@ -1056,3 +1056,7 @@ methodA()
 main()
 The exception can propagate upward until it is handled.
 
+36. Important Rule for throws
+For checked exceptions:
+Either:Handle it OR Declare it
+You cannot simply ignore it.

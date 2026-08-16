@@ -1001,3 +1001,13 @@ InterruptedException		Checked			Not RuntimeException
 OutOfMemoryError			Error			Error subclass
 StackOverflowError			Error			Error subclass
 
+32. Why FileNotFoundException is Checked
+Imagine:FileReader reader = new FileReader("student.txt");
+There are several possible situations:
+student.txt exists
+       ↓
+Read file
+student.txt doesn't exist
+       ↓
+FileNotFoundException
+Because this failure is foreseeable and potentially recoverable, Java requires you to address it.

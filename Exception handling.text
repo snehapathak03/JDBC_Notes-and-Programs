@@ -1011,3 +1011,14 @@ student.txt doesn't exist
        ↓
 FileNotFoundException
 Because this failure is foreseeable and potentially recoverable, Java requires you to address it.
+
+33. Why NullPointerException is Unchecked
+Consider:Student s = null;
+s.getName();
+The compiler cannot know whether s will be null at runtime.
+The correct solution is usually to fix the logic:
+if (s != null) {
+    System.out.println(s.getName());
+}
+rather than catching NullPointerException.
+

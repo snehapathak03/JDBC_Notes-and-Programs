@@ -1022,3 +1022,17 @@ if (s != null) {
 }
 rather than catching NullPointerException.
 
+34. Checked Exceptions and Method Signatures
+Suppose:
+static void readFile() {
+    FileReader reader = new FileReader("data.txt");
+}
+Compiler complains.
+You can write:
+static void readFile()
+        throws FileNotFoundException {
+    FileReader reader = new FileReader("data.txt");
+}
+Now the method signature communicates:
+"This method may throw FileNotFoundException; callers must deal with it."
+

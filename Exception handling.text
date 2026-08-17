@@ -1060,3 +1060,11 @@ The exception can propagate upward until it is handled.
 For checked exceptions:
 Either:Handle it OR Declare it
 You cannot simply ignore it.
+
+37. What Happens if You Ignore a Checked Exception?
+Example:
+static void read() {
+    FileReader reader = new FileReader("abc.txt");
+}
+Compilation fails.This is the fundamental difference between checked and unchecked exceptions.
+

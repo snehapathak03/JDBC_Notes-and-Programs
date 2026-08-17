@@ -1079,3 +1079,23 @@ catch(Exception e) {
 }
 This is bad practice.
 Why?Because it:Hides bugs,Makes debugging difficult,Loses useful context,Can cause incorrect application behavior.
+
+39. Best Practice
+Catch exceptions at a level where you can actually do something meaningful.
+Bad:
+catch(Exception e) {
+}
+Better:
+catch(FileNotFoundException e) {
+    System.out.println(
+        "Please verify the file path."
+    );
+}
+Even better in production:
+catch(FileNotFoundException e) {
+    logger.error(
+        "Unable to open student file",
+        e
+    );
+}
+

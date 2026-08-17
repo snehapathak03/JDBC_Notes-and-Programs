@@ -1125,3 +1125,10 @@ Controller / Global Handler
 HTTP 500 / appropriate response
 This is a realistic enterprise pattern.
 
+42. Checked vs Unchecked: Interview Answer
+If the interviewer asks:"What is the difference between checked and unchecked exceptions?"
+A strong answer is:Checked exceptions are exceptions other than RuntimeException subclasses that the 
+compiler requires the programmer to either catch or declare. They generally represent conditions that 
+a caller may reasonably be expected to handle, such as IOException or SQLException. Unchecked exceptions 
+are RuntimeException subclasses; the compiler doesn't require them to be caught or declared and they commonly 
+indicate programming errors or invalid state, such as NullPointerException or IllegalArgumentException.

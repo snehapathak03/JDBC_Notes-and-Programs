@@ -1068,3 +1068,14 @@ static void read() {
 }
 Compilation fails.This is the fundamental difference between checked and unchecked exceptions.
 
+38. Should Every Exception Be Caught?
+No.This is a very important professional programming principle.
+Don't do this everywhere:
+try {
+    // entire application
+}
+catch(Exception e) {
+    // ignore
+}
+This is bad practice.
+Why?Because it:Hides bugs,Makes debugging difficult,Loses useful context,Can cause incorrect application behavior.

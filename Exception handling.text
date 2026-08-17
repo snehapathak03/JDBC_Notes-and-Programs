@@ -1102,3 +1102,26 @@ catch(FileNotFoundException e) {
 40. Should We Catch RuntimeException?
 Sometimes.For example, in a REST API you may have a centralized exception handler that converts known 
 application exceptions into appropriate HTTP responses.But don't use try-catch everywhere to hide programming bugs.
+
+41. Professional Java Example
+Imagine a banking application:
+Controller
+    ↓
+Service
+    ↓
+Repository
+    ↓
+Database
+
+Database failure:
+SQLException
+     ↓
+Repository
+     ↓
+Service
+     ↓
+Controller / Global Handler
+     ↓
+HTTP 500 / appropriate response
+This is a realistic enterprise pattern.
+

@@ -1099,3 +1099,6 @@ catch(FileNotFoundException e) {
     );
 }
 
+40. Should We Catch RuntimeException?
+Sometimes.For example, in a REST API you may have a centralized exception handler that converts known 
+application exceptions into appropriate HTTP responses.But don't use try-catch everywhere to hide programming bugs.

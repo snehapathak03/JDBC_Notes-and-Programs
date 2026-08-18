@@ -1148,4 +1148,18 @@ Compiler enforcement → Compile time
 44. Another Common Myth
 "Unchecked exceptions cannot be handled."[Wrong.]They can be handled.The difference is:
 Checked:Must handle or declare
-Unchecked:May handle, but compiler doesn't require it
+Unchecked:May handle, but compiler doesn't require it.
+
+45. Quick Revision Chart
+                         Throwable
+                            │
+             ┌──────────────┴──────────────┐
+             │                             │
+           Error                       Exception
+             │                             │
+       Serious JVM                  ┌──────┴───────┐
+       problems                     │              │
+                                RuntimeException   Other
+                                      │           Exceptions
+                                      │              │
+                                  UNCHECKED       CHECKED

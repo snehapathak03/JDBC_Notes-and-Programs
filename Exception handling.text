@@ -1132,3 +1132,6 @@ compiler requires the programmer to either catch or declare. They generally repr
 a caller may reasonably be expected to handle, such as IOException or SQLException. Unchecked exceptions 
 are RuntimeException subclasses; the compiler doesn't require them to be caught or declared and they commonly 
 indicate programming errors or invalid state, such as NullPointerException or IllegalArgumentException.
+That's a much better answer than simply saying:"Checked occurs at compile time and unchecked occurs at runtime."
+Why?Because both ultimately occur at runtime. The important distinction is compile-time enforcement, 
+not when the exception itself happens.

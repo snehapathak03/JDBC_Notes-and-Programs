@@ -1135,3 +1135,12 @@ indicate programming errors or invalid state, such as NullPointerException or Il
 That's a much better answer than simply saying:"Checked occurs at compile time and unchecked occurs at runtime."
 Why?Because both ultimately occur at runtime. The important distinction is compile-time enforcement, 
 not when the exception itself happens.
+
+43. VERY IMPORTANT Correction to a Common Myth
+You may hear:"Checked exceptions happen at compile time."[Incorrect.]
+The exception itself occurs during execution.
+
+What happens at compile time is that the compiler checks whether you have handled or declared the checked exception.
+Correct:Checked Exception
+Exception occurs → Runtime
+Compiler enforcement → Compile time

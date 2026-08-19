@@ -1188,3 +1188,16 @@ Usually don't handle
        ↓
 OutOfMemoryError
 StackOverflowError                                  
+
+47. Interview Questions — Chapter 3
+Basic
+What is a checked exception?
+What is an unchecked exception?
+Why are checked exceptions checked by the compiler?
+Give five examples of checked exceptions.
+Give five examples of unchecked exceptions.
+What is RuntimeException?
+Is RuntimeException checked or unchecked?
+Is Error checked or unchecked?
+Can an unchecked exception be handled?
+Can a checked exception be ignored?

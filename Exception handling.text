@@ -1201,3 +1201,12 @@ Is RuntimeException checked or unchecked?
 Is Error checked or unchecked?
 Can an unchecked exception be handled?
 Can a checked exception be ignored?
+Intermediate:
+Why is IOException checked?
+Why is NullPointerException unchecked?
+Is Exception itself checked?
+What's the difference between compile-time checking and runtime occurrence?
+Can throws be used with unchecked exceptions?
+Can try-catch handle unchecked exceptions?
+Why shouldn't we catch Exception everywhere?
+Why should we prefer specific catch blocks?

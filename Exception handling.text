@@ -1217,3 +1217,37 @@ What happens when a checked exception propagates through multiple methods?
 How do checked exceptions interact with method overriding?
 Why are unchecked exceptions often preferred for programming errors?
 How does Spring Boot commonly handle exceptions centrally?
+
+48. Practice Programs
+Program 1 — Checked Exception
+Write a program that reads:student.txt
+and gracefully handles the situation when the file doesn't exist.
+
+Program 2 — Unchecked Exception
+Create a program that accepts two integers and handles division by zero.
+Expected:
+Enter numerator: 10
+Enter denominator: 0
+Cannot divide by zero.
+
+Program 3 — NumberFormatException
+Take a number as a String and convert it into an integer.
+Input:abc
+Expected:Invalid number.
+
+Program 4 — JDBC
+Write a program that establishes a MySQL connection and handles SQLException.
+
+Program 5 — Identify Exception Type
+For each:
+10 / 0
+String s = null;
+s.length();
+new FileReader("abc.txt");
+DriverManager.getConnection(...);
+
+Identify whether the exception is:
+Checked
+Unchecked
+Error
+Final Mental Model

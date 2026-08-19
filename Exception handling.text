@@ -1210,3 +1210,10 @@ Can throws be used with unchecked exceptions?
 Can try-catch handle unchecked exceptions?
 Why shouldn't we catch Exception everywhere?
 Why should we prefer specific catch blocks?
+Advanced:
+Why did Java introduce checked exceptions?
+How do checked exceptions affect API design?
+What happens when a checked exception propagates through multiple methods?
+How do checked exceptions interact with method overriding?
+Why are unchecked exceptions often preferred for programming errors?
+How does Spring Boot commonly handle exceptions centrally?

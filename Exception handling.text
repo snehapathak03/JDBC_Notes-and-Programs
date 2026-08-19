@@ -1251,3 +1251,23 @@ Checked
 Unchecked
 Error
 Final Mental Model
+
+If you remember only one diagram from this chapter, remember this:
+
+                         Object
+                            │
+                       Throwable
+                            │
+              ┌─────────────┴─────────────┐
+              │                           │
+            Error                      Exception
+              │                           │
+      Serious JVM issues        ┌─────────┴──────────┐
+                                │                    │
+                       RuntimeException          Other
+                                │                Exceptions
+                                │                    │
+                           UNCHECKED              CHECKED
+                                │                    │
+                    Compiler doesn't force     Compiler forces
+                    catch/declare              catch OR declare
